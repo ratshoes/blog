@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven's Cert Journey</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Steven's Cert Journey</div>
+            <nav class="nav">
+                <button class="nav-button active" data-view="timeline">Timeline</button>
+                <button class="nav-button" data-view="certs">Certifications</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="terminal">
+            <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-line"><span class="terminal-prompt">$</span> whoami</div>
+                <h1 class="hero-title" id="typed-title"></h1>
+                <div class="terminal-line"><span class="terminal-prompt">$</span> cat mission.txt</div>
+                <p class="hero-subtitle">Welcome to my journey. I'm rebuilding through certifications. This blog documents my path through Security+, CCNA, AWS Advanced Networking, and CCNP; tracking every study session, concept mastered, and lesson learned along the way.</p>
+            </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Study Hours</div>
+                <div class="stat-value" id="studyHours">24</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Certifications</div>
+                <div class="stat-value" id="certCount">0/4</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Days Active</div>
+                <div class="stat-value" id="daysActive">12</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Days Until Sec+</div>
+                <div class="stat-value" id="examCountdown"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div id="main-content">
+        <!-- Certification Roadmap -->
+        <section style="margin-bottom: var(--spacing-3xl);">
+            <h2 class="section-title" style="margin-bottom: var(--spacing-xl);">2026 Certification Roadmap</h2>
+            <div style="display: grid; gap: var(--spacing-lg);">
+                <div class="post-card" style="border-left: 4px solid #dc2626;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-sm);">
+                        <h3 class="post-title" style="margin: 0;">CompTIA Security+</h3>
+                        <span class="post-date">Target: Feb 9, 2026</span>
+                    </div>
+                    <p class="post-content">Foundation certification covering security concepts, threats, architecture, and operations. Currently on Section 2.4.</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-label">
+                            <span>Progress</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 40%; background: linear-gradient(90deg, #ef4444, #dc2626);"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-card" style="border-left: 4px solid #0ea5e9;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-sm);">
+                        <h3 class="post-title" style="margin: 0;">Cisco CCNA</h3>
+                        <span class="post-date">Target: Q1 2026</span>
+                    </div>
+                    <p class="post-content">Network fundamentals, IP connectivity, security fundamentals, and automation basics.</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-label">
+                            <span>Progress</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%; background: linear-gradient(90deg, #0ea5e9, #0284c7);"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-card" style="border-left: 4px solid #f59e0b;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-sm);">
+                        <h3 class="post-title" style="margin: 0;">AWS Advanced Networking - Specialty</h3>
+                        <span class="post-date">Target: Q2 2026</span>
+                    </div>
+                    <p class="post-content">Advanced AWS networking architecture, hybrid connectivity, and network automation.</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-label">
+                            <span>Progress</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%; background: linear-gradient(90deg, #f59e0b, #d97706);"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-card" style="border-left: 4px solid #8b5cf6;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-sm);">
+                        <h3 class="post-title" style="margin: 0;">Cisco CCNP Enterprise</h3>
+                        <span class="post-date">Target: Q3-Q4 2026</span>
+                    </div>
+                    <p class="post-content">Advanced enterprise networking including routing, switching, wireless, and automation.</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-label">
+                            <span>Progress</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%; background: linear-gradient(90deg, #8b5cf6, #7c3aed);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="timeline" id="timeline">
+            <!-- Timeline items -->
+            <div class="timeline-item" onclick="openPost(this)">
+                <article class="post-card">
+                    <div class="post-header">
+                        <span class="post-date">2026-01-23</span>
+                    </div>
+                    <span class="post-category category-cert">Security+</span>
+                    <h3 class="post-title">Section 2.4: Malicious Code</h3>
+                    <p class="post-content">
+                        Studying malicious code techniques including script-based attacks, PowerShell exploits, macros,
+                        and code injection methods. Understanding how attackers leverage legitimate tools and code
+                        execution to compromise systems.
+                    </p>
+                </article>
+            </div>
+
+            <div class="timeline-item" onclick="openPost(this)">
+                <article class="post-card">
+                    <div class="post-header">
+                        <span class="post-date">2026-01-22</span>
+                    </div>
+                    <span class="post-category category-cert">Security+</span>
+                    <h3 class="post-title">Section 2.3: Secure Network Designs</h3>
+                    <p class="post-content">
+                        Network segmentation strategies, DMZ configurations, and secure network architectures. Learned about 
+                        east-west vs north-south traffic, zero trust principles, and implementing proper network isolation 
+                        for different security zones.
+                    </p>
+                </article>
+            </div>
+
+            <div class="timeline-item" onclick="openPost(this)">
+                <article class="post-card">
+                    <div class="post-header">
+                        <span class="post-date">2026-01-21</span>
+                    </div>
+                    <span class="post-category category-cert">Security+</span>
+                    <h3 class="post-title">Section 2.2: Firewall Types</h3>
+                    <p class="post-content">
+                        Deep dive into firewall technologies: packet filtering, stateful inspection, proxy firewalls, 
+                        NGFW capabilities, and WAF functionality. Understanding when to deploy each type and how they 
+                        fit into defense-in-depth strategies.
+                    </p>
+                </article>
+            </div>
+
+            <div class="timeline-item" onclick="openPost(this)">
+                <article class="post-card">
+                    <div class="post-header">
+                        <span class="post-date">2026-01-20</span>
+                    </div>
+                    <span class="post-category category-cert">Security+</span>
+                    <h3 class="post-title">Section 2.1: Network Devices</h3>
+                    <p class="post-content">
+                        Reviewed security implications of network infrastructure: routers, switches, load balancers, 
+                        proxies, and their roles in security architecture. Covered port security, VLAN configurations, 
+                        and network access control fundamentals.
+                    </p>
+                </article>
+            </div>
+
+            <div class="timeline-item" onclick="openPost(this)">
+                <article class="post-card">
+                    <div class="post-header">
+                        <span class="post-date">2026-01-18</span>
+                    </div>
+                    <span class="post-category category-cert">Security+</span>
+                    <h3 class="post-title">Section 1.8: Security Awareness</h3>
+                    <p class="post-content">
+                        Security training programs, phishing awareness, social engineering tactics, and developing 
+                        security culture. Understanding the human element as both the weakest link and strongest defense 
+                        in organizational security.
+                    </p>
+                </article>
+            </div>
+
+            <div class="timeline-item" onclick="openPost(this)">
+                <article class="post-card">
+                    <div class="post-header">
+                        <span class="post-date">2026-01-17</span>
+                    </div>
+                    <span class="post-category category-cert">Security+</span>
+                    <h3 class="post-title">Section 1.7: Security Operations</h3>
+                    <p class="post-content">
+                        Incident response procedures, disaster recovery planning, business continuity, and security 
+                        monitoring. Learned about SIEM systems, log analysis, and the importance of documented 
+                        processes for security events.
+                    </p>
+                </article>
+            </div>
+
+            <div class="timeline-item" onclick="openPost(this)">
+                <article class="post-card">
+                    <div class="post-header">
+                        <span class="post-date">2026-01-16</span>
+                    </div>
+                    <span class="post-category category-cert">Security+</span>
+                    <h3 class="post-title">Section 1.6: Application Security</h3>
+                    <p class="post-content">
+                        Secure coding practices, input validation, buffer overflows, SQL injection, XSS, and CSRF attacks. 
+                        Understanding common application vulnerabilities from OWASP Top 10 and mitigation strategies for 
+                        each attack vector.
+                    </p>
+                </article>
+            </div>
+
+            <div class="timeline-item" onclick="openPost(this)">
+                <article class="post-card">
+                    <div class="post-header">
+                        <span class="post-date">2026-01-15</span>
+                    </div>
+                    <span class="post-category category-cert">Security+</span>
+                    <h3 class="post-title">Section 1.5: Cryptographic Solutions</h3>
+                    <p class="post-content">
+                        PKI infrastructure, digital certificates, certificate authorities, and trust models. Covered 
+                        symmetric vs asymmetric encryption use cases, hashing algorithms (SHA-256, MD5), and the importance 
+                        of proper key management and rotation policies.
+                    </p>
+                </article>
+            </div>
+
+            <div class="timeline-item" onclick="openPost(this)">
+                <article class="post-card">
+                    <div class="post-header">
+                        <span class="post-date">2026-01-14</span>
+                    </div>
+                    <span class="post-category category-cert">Security+</span>
+                    <h3 class="post-title">Section 1.4: Authentication & Authorization</h3>
+                    <p class="post-content">
+                        Multi-factor authentication, biometrics, SSO, SAML, OAuth, and access control models (RBAC, DAC, MAC). 
+                        Understanding the difference between authentication, authorization, and accounting in identity 
+                        management systems.
+                    </p>
+                </article>
+            </div>
+
+            <div class="timeline-item" onclick="openPost(this)">
+                <article class="post-card">
+                    <div class="post-header">
+                        <span class="post-date">2026-01-13</span>
+                    </div>
+                    <span class="post-category category-cert">Security+</span>
+                    <h3 class="post-title">Section 1.3: Change Management</h3>
+                    <p class="post-content">
+                        Configuration management, version control, and the importance of documented change processes. 
+                        Learned about baselines, patches, and how proper change management prevents security incidents 
+                        from unauthorized modifications.
+                    </p>
+                </article>
+            </div>
+
+            <div class="timeline-item" onclick="openPost(this)">
+                <article class="post-card">
+                    <div class="post-header">
+                        <span class="post-date">2026-01-12</span>
+                    </div>
+                    <span class="post-category category-cert">Security+</span>
+                    <h3 class="post-title">Section 1.1-1.2: Security Fundamentals</h3>
+                    <p class="post-content">
+                        Started Security+ journey! Covered CIA triad, defense in depth, least privilege, separation of 
+                        duties, and foundational security principles. Understanding threat actors, attack vectors, and 
+                        the security landscape that drives certification requirements.
+                    </p>
+                </article>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-- Modal for Adding New Post -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2 class="modal-header">New Progress Entry</h2>
+            <form id="postForm">
+                <div class="form-group">
+                    <label class="form-label" for="postCategory">Category</label>
+                    <select class="form-select" id="postCategory" required>
+                        <option value="">Select category...</option>
+                        <option value="cert">Certification Study</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="postTitle">Title</label>
+                    <input type="text" class="form-input" id="postTitle" placeholder="What did you work on?" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="postContent">Details</label>
+                    <textarea class="form-textarea" id="postContent" placeholder="Describe your progress..." required></textarea>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" class="button-secondary" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="add-button">Add Entry</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Full Post Modal -->
+    <div class="modal" id="postModal">
+        <div class="modal-content" style="max-width: 800px;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: var(--spacing-xl);">
+                <div>
+                    <span class="post-category" id="fullPostCategory"></span>
+                    <h2 class="modal-header" id="fullPostTitle" style="margin-top: var(--spacing-sm);"></h2>
+                </div>
+                <span class="post-date" id="fullPostDate"></span>
+            </div>
+            <div id="fullPostContent" style="font: var(--md-sys-typescale-body-large); color: var(--md-sys-color-on-surface-variant); line-height: 1.8; margin-bottom: var(--spacing-xl);"></div>
+            <div class="modal-actions">
+                <button class="add-button" onclick="closePostModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">2026 Steven M</footer>
+
+    <script src="script.js?v=3"></script>
+</body>
+</html>
