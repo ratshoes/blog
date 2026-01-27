@@ -92,12 +92,16 @@ const viewsContent = {
             <h2 class="section-title">Certifications</h2>
         </div>
         <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--spacing-xl);">
-            <!-- Security+ Card -->
+            <!-- Security+ Card - 40% progress -->
             <div class="post-card" style="text-align: center; padding: var(--spacing-2xl);">
-                <div style="width: 150px; height: 150px; margin: 0 auto var(--spacing-lg); background: linear-gradient(135deg, #ef4444, #dc2626); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; box-shadow: var(--md-sys-elevation-3);">
-                    <div style="color: white; font: var(--md-sys-typescale-headline-large);">
-                        <div style="font-size: 3rem; font-weight: 700;">SEC+</div>
-                        <div style="font-size: 0.75rem; opacity: 0.9; margin-top: -8px;">CompTIA</div>
+                <div style="width: 150px; height: 150px; margin: 0 auto var(--spacing-lg); position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--md-sys-elevation-3);">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #3a1515, #2a1010);"></div>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 40%; background: linear-gradient(135deg, #ef4444, #dc2626); transition: height 0.5s ease-out;"></div>
+                    <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+                        <div style="color: white; font: var(--md-sys-typescale-headline-large); text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
+                            <div style="font-size: 3rem; font-weight: 700;">SEC+</div>
+                            <div style="font-size: 0.75rem; opacity: 0.9; margin-top: -8px;">CompTIA</div>
+                        </div>
                     </div>
                 </div>
                 <h3 class="post-title">Security+</h3>
@@ -105,12 +109,16 @@ const viewsContent = {
                 <span class="post-category category-cert">Target: Feb 9, 2026</span>
             </div>
 
-            <!-- CCNA Card -->
+            <!-- CCNA Card - 0% progress -->
             <div class="post-card" style="text-align: center; padding: var(--spacing-2xl);">
-                <div style="width: 150px; height: 150px; margin: 0 auto var(--spacing-lg); background: linear-gradient(135deg, #0ea5e9, #0284c7); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; box-shadow: var(--md-sys-elevation-3);">
-                    <div style="color: white; font: var(--md-sys-typescale-headline-large);">
-                        <div style="font-size: 3rem; font-weight: 700;">CCNA</div>
-                        <div style="font-size: 0.75rem; opacity: 0.9; margin-top: -8px;">Cisco</div>
+                <div style="width: 150px; height: 150px; margin: 0 auto var(--spacing-lg); position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--md-sys-elevation-3);">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #0a2a3a, #051a25);"></div>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 0%; background: linear-gradient(135deg, #0ea5e9, #0284c7); transition: height 0.5s ease-out;"></div>
+                    <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+                        <div style="color: white; font: var(--md-sys-typescale-headline-large); text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
+                            <div style="font-size: 3rem; font-weight: 700;">CCNA</div>
+                            <div style="font-size: 0.75rem; opacity: 0.9; margin-top: -8px;">Cisco</div>
+                        </div>
                     </div>
                 </div>
                 <h3 class="post-title">CCNA</h3>
@@ -118,12 +126,16 @@ const viewsContent = {
                 <span class="post-category category-cert">Target: Q1 2026</span>
             </div>
 
-            <!-- AWS Card -->
+            <!-- AWS Card - 0% progress -->
             <div class="post-card" style="text-align: center; padding: var(--spacing-2xl);">
-                <div style="width: 150px; height: 150px; margin: 0 auto var(--spacing-lg); background: linear-gradient(135deg, #f59e0b, #d97706); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; box-shadow: var(--md-sys-elevation-3);">
-                    <div style="color: white; font: var(--md-sys-typescale-headline-large);">
-                        <div style="font-size: 2.5rem; font-weight: 700;">AWS</div>
-                        <div style="font-size: 0.65rem; opacity: 0.9; margin-top: -4px;">ADVANCED NET</div>
+                <div style="width: 150px; height: 150px; margin: 0 auto var(--spacing-lg); position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--md-sys-elevation-3);">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #3a2a0a, #2a1f05);"></div>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 0%; background: linear-gradient(135deg, #f59e0b, #d97706); transition: height 0.5s ease-out;"></div>
+                    <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+                        <div style="color: white; font: var(--md-sys-typescale-headline-large); text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
+                            <div style="font-size: 2.5rem; font-weight: 700;">AWS</div>
+                            <div style="font-size: 0.65rem; opacity: 0.9; margin-top: -4px;">ADVANCED NET</div>
+                        </div>
                     </div>
                 </div>
                 <h3 class="post-title">AWS Advanced Networking</h3>
@@ -131,12 +143,16 @@ const viewsContent = {
                 <span class="post-category category-cert">Target: Q2 2026</span>
             </div>
 
-            <!-- CCNP Card -->
+            <!-- CCNP Card - 0% progress -->
             <div class="post-card" style="text-align: center; padding: var(--spacing-2xl);">
-                <div style="width: 150px; height: 150px; margin: 0 auto var(--spacing-lg); background: linear-gradient(135deg, #8b5cf6, #7c3aed); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; box-shadow: var(--md-sys-elevation-3);">
-                    <div style="color: white; font: var(--md-sys-typescale-headline-large);">
-                        <div style="font-size: 2.75rem; font-weight: 700;">CCNP</div>
-                        <div style="font-size: 0.65rem; opacity: 0.9; margin-top: -4px;">ENTERPRISE</div>
+                <div style="width: 150px; height: 150px; margin: 0 auto var(--spacing-lg); position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--md-sys-elevation-3);">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #1f1535, #150f25);"></div>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 0%; background: linear-gradient(135deg, #8b5cf6, #7c3aed); transition: height 0.5s ease-out;"></div>
+                    <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+                        <div style="color: white; font: var(--md-sys-typescale-headline-large); text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
+                            <div style="font-size: 2.75rem; font-weight: 700;">CCNP</div>
+                            <div style="font-size: 0.65rem; opacity: 0.9; margin-top: -4px;">ENTERPRISE</div>
+                        </div>
                     </div>
                 </div>
                 <h3 class="post-title">CCNP Enterprise</h3>
