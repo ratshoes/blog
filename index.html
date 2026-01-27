@@ -147,16 +147,12 @@
                     <span class="post-category category-cert">Security+</span>
                     <h3 class="post-title">Section 2.4: Application Attacks</h3>
                     <p class="post-content">
-                        In this section I studied injection attacks, the attacks where you add your own information to the
-                        data stream. A SQL injection is where you put your own SQL requests into an existing application but the application
-                        should not allow for this. This attack can often be executed in the web browser such as in a text form where the developer
-                        may have forgotten to disable certain inputs. The other topic that this module instructed on was buffer overflows and replay attacks.
-                        A buffer overflow is conducted when the expected input exceeds the fixed memory allocated for a kind of field. For example, lets say
-                        there is a Username and Password input field. The username expects a maximum of 30 characters and the password expects a maximum character limit of 
-                        64 characters. In legacy systems sometimes an attacker can submit a request with lets say, 10,000 character username. Then pass that request through a script or API request.
-                        The website might accept it because it might have legacy C++ library handling input. This input might cause the website to crash since the attacker request overwrites adjacent memory.
-                        For reply attacks I learned about how an attacker can use a valid request such as a cookie. In this scenario the user logs in and the website issues a session cookie. The attacker steals that cookie such as with a malicious google chrome extension
-                        then the attacker sends that same cookie to the server. The server then accepts it again.            
+                        Studied injection attacks, buffer overflows, and replay attacks. SQL injection involves inserting malicious
+                        SQL queries into application inputs like web forms where developers failed to sanitize input. Buffer overflows
+                        occur when input exceeds allocated memory - for example, submitting a 10,000 character username to a field
+                        expecting 30 characters can crash legacy systems by overwriting adjacent memory. Replay attacks involve
+                        stealing valid credentials like session cookies and reusing them - an attacker captures a user's session
+                        cookie and sends it to the server, which accepts it as legitimate.
                     </p>
                 </article>
             </div>
