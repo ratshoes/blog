@@ -106,7 +106,7 @@ const viewsContent = {
                 </div>
                 <h3 class="post-title">Security+</h3>
                 <p class="post-content" style="margin-bottom: var(--spacing-lg);">Foundation-level security certification covering threats, vulnerabilities, and security best practices.</p>
-                <span class="post-category category-cert">Target: Feb 9, 2026</span>
+                <span class="post-category category-cert">Target: Feb 13, 2026</span>
             </div>
 
             <!-- CCNA Card - 0% progress -->
@@ -193,7 +193,7 @@ window.addEventListener('load', function() {
 
 // Exam countdown
 function updateCountdown() {
-    const examDate = new Date('2026-02-09');
+    const examDate = new Date('2026-02-13');
     const today = new Date();
     const diffTime = examDate - today;
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
