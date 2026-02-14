@@ -4,26 +4,46 @@
 const blogPosts = [
     {
         id: 'passing-security-plus',
-        title: 'I Passed Security+ -- Here\'s What I Learned',
+        title: 'I Passed the Security+. Now What?',
         date: '2026-02-14',
         category: 'Career',
         categoryClass: 'category-career',
         featuredImage: null,
-        excerpt: 'After weeks of intense study, I passed the CompTIA Security+ exam. Here are my takeaways, study strategies, and what surprised me on test day.',
+        excerpt: 'Walked into a testing center on February 13th not sure if I was ready. Walked out with a Security+ certification. Here\\'s the honest rundown.',
         content: `
-            <p>After weeks of grinding through Professor Messer videos, practice exams, and late-night flashcard sessions, I sat down at the testing center on February 13th and passed the CompTIA Security+ SY0-701 exam.</p>
+            <p>So yeah. I passed.</p>
 
-            <h2>My Study Approach</h2>
-            <p>I used a combination of video lectures, hands-on labs, and spaced repetition. The key was consistency -- studying every single day, even if only for 30 minutes on busy days. I logged around 60 hours of total study time across 20 active days.</p>
+            <p>February 13th, I sat down at the Pearson VUE center, clicked through the NDA stuff they make you agree to, and stared at the first question on the CompTIA Security+ SY0-701. My hands were honestly a little shaky. Probably shouldn't have had that second cup of coffee but here we are.</p>
 
-            <h2>What Surprised Me</h2>
-            <p>The exam leaned heavily into scenario-based questions. Memorizing definitions wasn't enough; you need to understand <em>when</em> and <em>why</em> to apply each concept. The performance-based questions at the start tested practical knowledge of network diagrams and security configurations.</p>
+            <p>I won't lie and say I felt confident going in. I'd been studying for about 20 days, maybe 60 hours total if you count the nights where I dozed off mid-flashcard. But something clicked during the exam. All those random acronyms and frameworks actually started making sense when they threw real scenarios at me.</p>
 
-            <h2>Resources That Helped Most</h2>
-            <p>Professor Messer's free video series was the backbone. I supplemented with practice exams to identify weak areas, then went back and drilled those sections. Taking notes by hand for key concepts like the CIA triad, authentication models, and cryptographic solutions helped cement the material.</p>
+            <h2>How I Actually Studied</h2>
 
-            <h2>What's Next</h2>
-            <p>CCNA is the next target. I'm shifting gears from security theory to hands-on networking. The foundation from Security+ -- especially the networking and infrastructure sections -- gives me a head start. Stay tuned for that journey.</p>
+            <p>Look, there's no secret formula here. Professor Messer on YouTube was my go-to. Free, thorough, and the guy just explains things in a way that sticks. I watched his entire SY0-701 series probably one and a half times through.</p>
+
+            <p>The thing that really helped though? Writing stuff down by hand. Old school, I know. But something about physically writing out the CIA triad for the tenth time, or sketching out how Kerberos authentication works, that made it click in a way that just watching videos never did. My notebook looked like a mess by the end. Diagrams everywhere, sticky notes falling out. It worked though.</p>
+
+            <p>Practice exams were huge too. Not because they predict what's on the real test (they don't, not really) but because they show you where your gaps are. I kept bombing questions about cryptographic implementations early on, so I went back and drilled that section until I could explain symmetric vs asymmetric encryption to my cat. She wasn't impressed but I got better at it.</p>
+
+            <h2>The Exam Itself</h2>
+
+            <p>Here's what caught me off guard. The PBQs (performance-based questions) hit you right at the start. No warmup. You're immediately looking at network diagrams and trying to configure firewall rules or identify what's wrong with a security setup. I'd heard people say "skip them and come back" and honestly that's solid advice. I flagged them, knocked out the multiple choice stuff to build some momentum, then circled back with a clearer head.</p>
+
+            <p>The multiple choice questions were heavier on scenarios than I expected. It wasn't just "what is a buffer overflow?" It was more like "a user reports they can't access the company VPN after a recent update, and logs show repeated failed authentication attempts from an unusual IP, what should you do first?" That kind of thing. You gotta think through problems, not just recall definitions.</p>
+
+            <h2>What Got Me Through It</h2>
+
+            <p>Consistency more than anything. Some days I only studied for half an hour because life happens. Other days I'd lock in for three or four hours straight. But I touched the material every single day for those 20 days. No days off. Even when I didn't feel like it, even when the content was dry (looking at you, governance and compliance), I showed up.</p>
+
+            <p>Also, and this might sound weird, but talking about what I learned out loud helped a ton. I'd explain concepts to nobody in particular while making dinner or driving. If I stumbled trying to explain something, that told me I didn't actually understand it yet.</p>
+
+            <h2>So What Now?</h2>
+
+            <p>CCNA is next on the list. I'm pivoting from security theory into networking, which honestly feels like a natural progression. A lot of what Security+ covered around network infrastructure and protocols gave me a decent foundation. But networking is its own beast and I know the CCNA is going to be a different kind of challenge.</p>
+
+            <p>No exam date set yet. I want to actually take my time with this one and build up some lab experience along the way. But the momentum is there. One cert down, three to go.</p>
+
+            <p>If you're thinking about going for the Security+ yourself, just start. Seriously. Stop reading Reddit threads about whether it's worth it and just start studying. You'll figure out the rest as you go.</p>
         `
     },
     // Add new blog posts above this line
