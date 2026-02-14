@@ -4,46 +4,45 @@
 const blogPosts = [
     {
         id: 'passing-security-plus',
-        title: 'I Passed the Security+. Now What?',
+        title: 'I Passed the Security+',
         date: '2026-02-14',
         category: 'Career',
         categoryClass: 'category-career',
-        featuredImage: 'blog-images/Screenshot 2026-02-14 at 3.36.26 AM.png',
-        excerpt: 'Walked into a testing center on February 13th not sure if I was ready. Walked out with a Security+ certification. Here\'s the honest rundown.',
+        featuredImage: 'blog-images/secplus-passed.png',
+        excerpt: 'Walked into a testing center on February 13th not sure if I was ready. Walked out with a Security+ certification. Here is the honest rundown.',
         content: `
-            <p>So yeah. I passed.</p>
+           <p>So yeah I passed</p>
 
-            <p>February 13th, I sat down at the Pearson VUE center, clicked through the NDA stuff they make you agree to, and stared at the first question on the CompTIA Security+ SY0-701. My hands were honestly a little shaky. Probably shouldn't have had that second cup of coffee but here we are.</p>
+<p>On February 13th I walked into the Pearson VUE center, clicked through the NDA, and stared at the first question of the Security+ 701. I told myself I was ready but practice tests only go so far, and when it counted it was just me and the screen</p>
 
-            <p>I won't lie and say I felt confident going in. I'd been studying for about 20 days, maybe 60 hours total if you count the nights where I dozed off mid-flashcard. But something clicked during the exam. All those random acronyms and frameworks actually started making sense when they threw real scenarios at me.</p>
+<p>I did not feel confident going in. I studied for about 20 days, maybe 60 hours total, including the nights where I almost fell asleep at my desk. I had taken the 601 version before and the 701 felt harder, and I had not tested in a long time which added more pressure than I expected</p>
 
-            <h2>How I Actually Studied</h2>
+<h2>How I Actually Studied</h2>
 
-            <p>Look, there's no secret formula here. Professor Messer on YouTube was my go-to. Free, thorough, and the guy just explains things in a way that sticks. I watched his entire SY0-701 series probably one and a half times through.</p>
+<p>There was no secret method. I used Professor Messer on YouTube and watched his full SY0-701 series about one and a half times, along with SkillCertPro practice exams</p>
 
-            <p>The thing that really helped though? Writing stuff down by hand. Old school, I know. But something about physically writing out the CIA triad for the tenth time, or sketching out how Kerberos authentication works, that made it click in a way that just watching videos never did. My notebook looked like a mess by the end. Diagrams everywhere, sticky notes falling out. It worked though.</p>
+<p>What made the biggest difference was writing by hand. I wrote out the CIA triad again and again, drew diagrams of how Kerberos works, and mapped authentication flows. My notebook looked messy by the end but it forced me to slow down and think, and that is what made it stick</p>
 
-            <p>Practice exams were huge too. Not because they predict what's on the real test (they don't, not really) but because they show you where your gaps are. I kept bombing questions about cryptographic implementations early on, so I went back and drilled that section until I could explain symmetric vs asymmetric encryption to my cat. She wasn't impressed but I got better at it.</p>
+<p>Practice exams mattered too. Not because they matched the real test but because they exposed my weak spots, especially cryptography. I kept missing those questions so I drilled symmetric and asymmetric encryption until I could explain them clearly without guessing</p>
 
-            <h2>The Exam Itself</h2>
+<h2>The Exam Itself</h2>
 
-            <p>Here's what caught me off guard. The PBQs (performance-based questions) hit you right at the start. No warmup. You're immediately looking at network diagrams and trying to configure firewall rules or identify what's wrong with a security setup. I'd heard people say "skip them and come back" and honestly that's solid advice. I flagged them, knocked out the multiple choice stuff to build some momentum, then circled back with a clearer head.</p>
+<p>The performance based questions showed up first with no warmup. You open the exam and you are staring at network diagrams and firewall rules, and it hits you fast. I flagged them, moved to multiple choice to build momentum, then came back with a clearer head</p>
 
-            <p>The multiple choice questions were heavier on scenarios than I expected. It wasn't just "what is a buffer overflow?" It was more like "a user reports they can't access the company VPN after a recent update, and logs show repeated failed authentication attempts from an unusual IP, what should you do first?" That kind of thing. You gotta think through problems, not just recall definitions.</p>
+<p>The multiple choice questions were heavy on scenarios. Not simple definitions but real situations, like a user who cannot access the VPN and logs showing failed authentication from an unusual IP, and you have to decide what to do first. You need to think through problems instead of just recalling terms</p>
 
-            <h2>What Got Me Through It</h2>
+<h2>What Got Me Through It</h2>
 
-            <p>Consistency more than anything. Some days I only studied for half an hour because life happens. Other days I'd lock in for three or four hours straight. But I touched the material every single day for those 20 days. No days off. Even when I didn't feel like it, even when the content was dry (looking at you, governance and compliance), I showed up.</p>
+<p>Consistency. I studied every day for 20 days, sometimes 30 minutes, sometimes three or four hours, but I did not skip. Even when the material felt dry I showed up</p>
 
-            <p>Also, and this might sound weird, but talking about what I learned out loud helped a ton. I'd explain concepts to nobody in particular while making dinner or driving. If I stumbled trying to explain something, that told me I didn't actually understand it yet.</p>
+<p>I also explained topics out loud while driving or making dinner. If I stumbled while explaining something that told me I did not fully understand it, so I went back and reviewed until I could say it clearly</p>
 
-            <h2>So What Now?</h2>
+<h2>So What Now</h2>
 
-            <p>CCNA is next on the list. I'm pivoting from security theory into networking, which honestly feels like a natural progression. A lot of what Security+ covered around network infrastructure and protocols gave me a decent foundation. But networking is its own beast and I know the CCNA is going to be a different kind of challenge.</p>
+<p>CCNA is next. Security+ gave me a solid base in security concepts and network fundamentals, and now I want to go deeper into networking. I have not set a test date yet because I want more lab time first, but the momentum is there</p>
 
-            <p>No exam date set yet. I want to actually take my time with this one and build up some lab experience along the way. But the momentum is there. One cert down, three to go.</p>
+<p>If you are thinking about taking Security+ just start. Set a plan, stay consistent, and trust the process</p>
 
-            <p>If you're thinking about going for the Security+ yourself, just start. Seriously. Stop reading Reddit threads about whether it's worth it and just start studying. You'll figure out the rest as you go.</p>
         `
     },
     // Add new blog posts above this line
