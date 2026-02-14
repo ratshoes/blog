@@ -8,7 +8,7 @@ const blogPosts = [
         date: '2026-02-14',
         category: 'Career',
         categoryClass: 'category-career',
-        featuredImage: null,
+        featuredImage: 'blog-images/Screenshot 2026-02-14 at 3.36.26 AM.png',
         excerpt: 'Walked into a testing center on February 13th not sure if I was ready. Walked out with a Security+ certification. Here\\'s the honest rundown.',
         content: `
             <p>So yeah. I passed.</p>
