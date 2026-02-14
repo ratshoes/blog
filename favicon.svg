@@ -24,5 +24,5 @@
     </pattern>
   </defs>
   <rect width="64" height="64" fill="url(#digicamo)"/>
-  <text x="50" y="56" font-family="Arial Black, Arial, sans-serif" font-size="28" font-weight="900" fill="#ffffff" text-anchor="end" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">SM</text>
+  <text x="50" y="56" font-family="Arial Black, Arial, sans-serif" font-size="28" font-weight="900" fill="#0ea5e9" text-anchor="end" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">SM</text>
 </svg>

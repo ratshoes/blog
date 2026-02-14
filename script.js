@@ -16,12 +16,12 @@ function openPost(item) {
     const title = item.querySelector('.post-title').textContent;
     const date = item.querySelector('.post-date').textContent;
     const content = item.querySelector('.post-content').textContent;
-    
+
     document.getElementById('fullPostCategory').textContent = category;
     document.getElementById('fullPostTitle').textContent = title;
     document.getElementById('fullPostDate').textContent = date;
     document.getElementById('fullPostContent').textContent = content;
-    
+
     document.getElementById('postModal').classList.add('active');
 }
 
@@ -45,11 +45,11 @@ document.getElementById('postModal').addEventListener('click', function(e) {
 // Handle form submission
 document.getElementById('postForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    
+
     const category = document.getElementById('postCategory').value;
     const title = document.getElementById('postTitle').value;
     const content = document.getElementById('postContent').value;
-    
+
     addPost(category, title, content);
     closeModal();
 });
@@ -57,10 +57,10 @@ document.getElementById('postForm').addEventListener('submit', function(e) {
 function addPost(category, title, content) {
     const timeline = document.getElementById('timeline');
     const today = new Date().toISOString().split('T')[0];
-    
+
     const categoryClass = category === 'cert' ? 'category-cert' : 'category-project';
     const categoryLabel = category === 'cert' ? 'Certification' : 'Project';
-    
+
     const postHTML = `
         <div class="timeline-item" onclick="openPost(this)">
             <article class="post-card">
@@ -73,15 +73,38 @@ function addPost(category, title, content) {
             </article>
         </div>
     `;
-    
+
     timeline.insertAdjacentHTML('afterbegin', postHTML);
-    
+
     // Update stats
     updateStats();
 }
 
 function updateStats() {
     // Update stats when entries are added
+}
+
+// Confetti effect for Security+ logo
+function createConfetti(container) {
+    const colors = ['#22c55e', '#16a34a', '#4ade80', '#86efac', '#ffffff', '#fbbf24'];
+    const confettiCount = 40;
+
+    for (let i = 0; i < confettiCount; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti-piece';
+        confetti.style.left = Math.random() * 100 + '%';
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.animationDelay = Math.random() * 0.5 + 's';
+        confetti.style.animationDuration = (Math.random() * 1 + 1) + 's';
+        // Random horizontal drift
+        confetti.style.setProperty('--drift', (Math.random() * 80 - 40) + 'px');
+        container.appendChild(confetti);
+    }
+
+    // Remove confetti after animation
+    setTimeout(() => {
+        container.querySelectorAll('.confetti-piece').forEach(p => p.remove());
+    }, 2000);
 }
 
 // Navigation between views
@@ -92,21 +115,23 @@ const viewsContent = {
             <h2 class="section-title">Certifications</h2>
         </div>
         <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--spacing-xl);">
-            <!-- Security+ Card - 40% progress -->
+            <!-- Security+ Card - COMPLETED 100% -->
             <div class="post-card" style="text-align: center; padding: var(--spacing-2xl);">
-                <div style="width: 150px; height: 150px; margin: 0 auto var(--spacing-lg); position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--md-sys-elevation-3);">
-                    <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #3a1515, #2a1010);"></div>
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 40%; background: linear-gradient(135deg, #ef4444, #dc2626); transition: height 0.5s ease-out;"></div>
-                    <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
-                        <div style="color: white; font: var(--md-sys-typescale-headline-large); text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
-                            <div style="font-size: 3rem; font-weight: 700;">SEC+</div>
-                            <div style="font-size: 0.75rem; opacity: 0.9; margin-top: -8px;">CompTIA</div>
+                <div id="secplus-logo" class="cert-logo-container" style="width: 150px; height: 150px; margin: 0 auto var(--spacing-lg); position: relative; border-radius: var(--radius-lg); overflow: visible; box-shadow: var(--md-sys-elevation-3); cursor: pointer;">
+                    <div style="width: 100%; height: 100%; position: relative; border-radius: var(--radius-lg); overflow: hidden;">
+                        <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #052e16, #022c22);"></div>
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 100%; background: linear-gradient(135deg, #22c55e, #16a34a); transition: height 0.5s ease-out;"></div>
+                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+                            <div style="color: white; font: var(--md-sys-typescale-headline-large); text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
+                                <div style="font-size: 3rem; font-weight: 700;">SEC+</div>
+                                <div style="font-size: 0.75rem; opacity: 0.9; margin-top: -8px;">CompTIA</div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <h3 class="post-title">Security+</h3>
                 <p class="post-content" style="margin-bottom: var(--spacing-lg);">Foundation-level security certification covering threats, vulnerabilities, and security best practices.</p>
-                <span class="post-category category-cert">Target: Feb 13, 2026</span>
+                <span class="post-category" style="background: #052e16; color: #22c55e; border: 1px solid #22c55e;">COMPLETED</span>
             </div>
 
             <!-- CCNA Card - 0% progress -->
@@ -160,6 +185,15 @@ const viewsContent = {
                 <span class="post-category category-cert">Target: Q3-Q4 2026</span>
             </div>
         </div>
+    `,
+    blog: `
+        <div class="section-header">
+            <h2 class="section-title">Blog</h2>
+        </div>
+        <div class="post-card" style="text-align: center; padding: var(--spacing-3xl);">
+            <h3 class="post-title" style="font-size: 2rem; margin-bottom: var(--spacing-lg);">Work in Progress</h3>
+            <p class="post-content" style="font-size: 1.1rem;">This section is currently under construction. Check back soon for blog posts about my certification journey, networking concepts, and career insights.</p>
+        </div>
     `
 };
 
@@ -177,8 +211,22 @@ document.querySelectorAll('.nav-button').forEach(button => {
         // Update main content
         const mainContent = document.getElementById('main-content');
         mainContent.innerHTML = viewsContent[view];
+
+        // Attach confetti listener if on certs view
+        if (view === 'certs') {
+            attachConfettiListener();
+        }
     });
 });
+
+function attachConfettiListener() {
+    const secplusLogo = document.getElementById('secplus-logo');
+    if (secplusLogo) {
+        secplusLogo.addEventListener('mouseenter', function() {
+            createConfetti(this);
+        });
+    }
+}
 
 // Animate progress bars on load
 window.addEventListener('load', function() {
@@ -190,16 +238,6 @@ window.addEventListener('load', function() {
         }, 100);
     });
 });
-
-// Exam countdown
-function updateCountdown() {
-    const examDate = new Date('2026-02-13');
-    const today = new Date();
-    const diffTime = examDate - today;
-    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    document.getElementById('examCountdown').textContent = diffDays;
-}
-updateCountdown();
 
 // Typing animation
 function typeText(element, text, speed = 100) {
@@ -266,4 +304,3 @@ setTimeout(() => {
         });
     }
 }, 2500);
-

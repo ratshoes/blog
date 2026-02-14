@@ -541,6 +541,44 @@ body {
     }
 }
 
+/* Confetti */
+.cert-logo-container {
+    position: relative;
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 50%;
+    opacity: 0;
+    pointer-events: none;
+    animation: confetti-burst 1.5s ease-out forwards;
+}
+
+.confetti-piece:nth-child(odd) {
+    width: 4px;
+    height: 8px;
+    border-radius: 2px;
+}
+
+.confetti-piece:nth-child(even) {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+@keyframes confetti-burst {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--drift, 0px), -200px) rotate(720deg) scale(0.5);
+    }
+}
+
 /* Footer */
 .footer {
     border-top: 1px solid var(--md-sys-color-outline);
