@@ -718,42 +718,32 @@ body {
     border: 1px solid var(--md-sys-color-outline);
 }
 
-/* Confetti */
-.cert-logo-container {
+/* Badge Shine */
+.badge-shine {
     position: relative;
 }
 
-.confetti-piece {
+.shine-overlay {
     position: absolute;
-    width: 6px;
-    height: 6px;
-    top: 50%;
-    opacity: 0;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 30%,
+        rgba(255, 255, 255, 0.25) 45%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0.25) 55%,
+        transparent 70%,
+        transparent 100%
+    );
+    transform: translateX(-150%);
     pointer-events: none;
-    animation: confetti-burst 1.5s ease-out forwards;
+    z-index: 10;
 }
 
-.confetti-piece:nth-child(odd) {
-    width: 4px;
-    height: 8px;
-    border-radius: 2px;
-}
-
-.confetti-piece:nth-child(even) {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-}
-
-@keyframes confetti-burst {
-    0% {
-        opacity: 1;
-        transform: translate(0, 0) rotate(0deg) scale(1);
-    }
-    100% {
-        opacity: 0;
-        transform: translate(var(--drift, 0px), -200px) rotate(720deg) scale(0.5);
-    }
+.badge-shine:hover .shine-overlay {
+    transform: translateX(150%);
+    transition: transform 0.8s ease;
 }
 
 /* Footer */

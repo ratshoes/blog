@@ -166,29 +166,6 @@ function updateStats() {
 }
 
 // ============================================================
-// Confetti effect for Security+ logo
-// ============================================================
-function createConfetti(container) {
-    const colors = ['#22c55e', '#16a34a', '#4ade80', '#86efac', '#ffffff', '#fbbf24'];
-    const confettiCount = 40;
-
-    for (let i = 0; i < confettiCount; i++) {
-        const confetti = document.createElement('div');
-        confetti.className = 'confetti-piece';
-        confetti.style.left = Math.random() * 100 + '%';
-        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-        confetti.style.animationDelay = Math.random() * 0.5 + 's';
-        confetti.style.animationDuration = (Math.random() * 1 + 1) + 's';
-        confetti.style.setProperty('--drift', (Math.random() * 80 - 40) + 'px');
-        container.appendChild(confetti);
-    }
-
-    setTimeout(() => {
-        container.querySelectorAll('.confetti-piece').forEach(p => p.remove());
-    }, 2000);
-}
-
-// ============================================================
 // Blog View Functions
 // ============================================================
 function generateBlogView() {
@@ -275,21 +252,20 @@ const viewsContent = {
         <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--spacing-xl);">
             <!-- Security+ Card - COMPLETED 100% -->
             <div class="post-card" style="text-align: center; padding: var(--spacing-2xl);">
-                <div id="secplus-logo" class="cert-logo-container" style="width: 150px; height: 150px; margin: 0 auto var(--spacing-lg); position: relative; border-radius: var(--radius-lg); overflow: visible; box-shadow: var(--md-sys-elevation-3); cursor: pointer;">
-                    <div style="width: 100%; height: 100%; position: relative; border-radius: var(--radius-lg); overflow: hidden;">
-                        <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #052e16, #022c22);"></div>
-                        <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 100%; background: linear-gradient(135deg, #22c55e, #16a34a); transition: height 0.5s ease-out;"></div>
-                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
-                            <div style="color: white; font: var(--md-sys-typescale-headline-large); text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
-                                <div style="font-size: 3rem; font-weight: 700;">SEC+</div>
-                                <div style="font-size: 0.75rem; opacity: 0.9; margin-top: -8px;">CompTIA</div>
-                            </div>
+                <div id="secplus-logo" class="cert-logo-container badge-shine" style="width: 150px; height: 150px; margin: 0 auto var(--spacing-lg); position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--md-sys-elevation-3); cursor: pointer;">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #3a1515, #2a1010);"></div>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 100%; background: linear-gradient(135deg, #ef4444, #dc2626); transition: height 0.5s ease-out;"></div>
+                    <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+                        <div style="color: white; font: var(--md-sys-typescale-headline-large); text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
+                            <div style="font-size: 3rem; font-weight: 700;">SEC+</div>
+                            <div style="font-size: 0.75rem; opacity: 0.9; margin-top: -8px;">CompTIA</div>
                         </div>
                     </div>
+                    <div class="shine-overlay"></div>
                 </div>
                 <h3 class="post-title">Security+</h3>
                 <p class="post-content" style="margin-bottom: var(--spacing-lg);">Foundation-level security certification covering threats, vulnerabilities, and security best practices.</p>
-                <span class="post-category" style="background: #052e16; color: #22c55e; border: 1px solid #22c55e;">COMPLETED</span>
+                <span class="post-category" style="background: #450a0a; color: #fecaca; border: 1px solid #dc2626;">COMPLETED</span>
             </div>
 
             <!-- CCNA Card - 0% progress -->
@@ -364,20 +340,8 @@ document.querySelectorAll('.nav-button').forEach(button => {
             mainContent.innerHTML = viewsContent[view];
         }
 
-        if (view === 'certs') {
-            attachConfettiListener();
-        }
     });
 });
-
-function attachConfettiListener() {
-    const secplusLogo = document.getElementById('secplus-logo');
-    if (secplusLogo) {
-        secplusLogo.addEventListener('mouseenter', function() {
-            createConfetti(this);
-        });
-    }
-}
 
 // ============================================================
 // Animations & Effects
