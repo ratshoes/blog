@@ -48,7 +48,7 @@ const blogPosts = [
         date: '2026-02-14',
         category: 'Career',
         categoryClass: 'category-career',
-        featuredImage: null,
+        featuredImage: 'blog-images/savejob.jpg',
         excerpt: 'Planning has never been my strong suit. This year I sat down and built a realistic certification roadmap for four exams in twelve months.',
         content: `<p>I have never really been the best at planning. Historically it has led to me making plans I could not follow up on, setting goals that sounded good on paper but fell apart the second life got in the way. But this year is about accountability and follow through</p>
 
