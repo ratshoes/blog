@@ -10,8 +10,7 @@ const blogPosts = [
         categoryClass: 'category-career',
         featuredImage: 'blog-images/secplus-passed.png',
         excerpt: 'Walked into a testing center on February 13th not sure if I was ready. Walked out with a Security+ certification. Here is the honest rundown.',
-        content: `
-           <p>So yeah I passed</p>
+        content: `<p>So yeah I passed</p>
 
 <p>On February 13th I walked into the Pearson VUE center, clicked through the NDA, and stared at the first question of the Security+ 701. I told myself I was ready but practice tests only go so far, and when it counted it was just me and the screen</p>
 
@@ -41,9 +40,7 @@ const blogPosts = [
 
 <p>CCNA is next. Security+ gave me a solid base in security concepts and network fundamentals, and now I want to go deeper into networking. I have not set a test date yet because I want more lab time first, but the momentum is there</p>
 
-<p>If you are thinking about taking Security+ just start. Set a plan, stay consistent, and trust the process</p>
-
-        `
+<p>If you are thinking about taking Security+ just start. Set a plan, stay consistent, and trust the process</p>`
     },
     // Add new blog posts above this line
 ];
