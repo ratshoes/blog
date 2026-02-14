@@ -42,6 +42,38 @@ const blogPosts = [
 
 <p>If you are thinking about taking Security+ just start. Set a plan, stay consistent, and trust the process</p>`
     },
+    {
+        id: 'mapping-out-the-year',
+        title: 'Mapping Out an Education Plan for the Year',
+        date: '2026-02-14',
+        category: 'Career',
+        categoryClass: 'category-career',
+        featuredImage: null,
+        excerpt: 'Planning has never been my strong suit. This year I sat down and built a realistic certification roadmap for four exams in twelve months.',
+        content: `<p>I have never really been the best at planning. Historically it has led to me making plans I could not follow up on, setting goals that sounded good on paper but fell apart the second life got in the way. But this year is about accountability and follow through</p>
+
+<p>So I sat down and actually mapped this out. Four certifications in one year. Security+, CCNA, AWS Advanced Networking Specialty, and CCNP Enterprise. Written out like that it looks aggressive, and maybe it is, but I genuinely believe it is doable if I stay disciplined about it</p>
+
+<h2>Why These Four</h2>
+
+<p>It was not random. Security+ came first because it builds a foundation in security concepts that touches everything else. You cannot talk about networking or cloud without understanding the security side of it. CCNA follows naturally because it goes deep on the networking fundamentals that Security+ only scratches the surface of. Routing, switching, IP connectivity, all of that</p>
+
+<p>AWS Advanced Networking after that because I want to take those networking skills and apply them in the cloud. Hybrid connectivity, VPCs, transit gateways, that sort of thing. And CCNP Enterprise at the end of the year to round it all out at a professional level. Each cert feeds into the next one. That was intentional</p>
+
+<h2>Being Honest About the Timeline</h2>
+
+<p>I gave myself roughly a quarter per certification. Security+ is already done so that frees up some breathing room. CCNA is the focus now and I want to take my time with it because networking is one of those things where if you rush it you end up with gaps that haunt you later</p>
+
+<p>AWS in the summer makes sense because by then I should have a strong enough networking background to handle the specialty material. And CCNP in the fall gives me the most time for what will probably be the hardest one on the list</p>
+
+<h2>What Makes This Year Different</h2>
+
+<p>I think the biggest change is that I am treating this like a job. Not something I do when I feel motivated but something I show up for every single day. The Security+ process proved to me that consistency works better than cramming. Twenty days of steady effort beat the alternative of studying for two months with week long breaks in between</p>
+
+<p>I also built in flexibility. If CCNA takes longer than expected I am not going to panic about it. The roadmap is a guide not a contract. The point is forward motion, not perfection</p>
+
+<p>For the first time I actually feel like I have a plan I can stick to. That might not sound like much but for someone who has started and stopped more times than I can count, it means a lot</p>`
+    },
     // Add new blog posts above this line
 ];
 
