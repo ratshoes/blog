@@ -77,93 +77,6 @@ const blogPosts = [
     // Add new blog posts above this line
 ];
 
-// ============================================================
-// Modal Functions
-// ============================================================
-function openModal() {
-    if (!checkPassword()) {
-        return;
-    }
-    document.getElementById('modal').classList.add('active');
-}
-
-function closeModal() {
-    document.getElementById('modal').classList.remove('active');
-    document.getElementById('postForm').reset();
-}
-
-function openPost(item) {
-    const category = item.querySelector('.post-category').textContent;
-    const title = item.querySelector('.post-title').textContent;
-    const date = item.querySelector('.post-date').textContent;
-    const content = item.querySelector('.post-content').textContent;
-
-    document.getElementById('fullPostCategory').textContent = category;
-    document.getElementById('fullPostTitle').textContent = title;
-    document.getElementById('fullPostDate').textContent = date;
-    document.getElementById('fullPostContent').textContent = content;
-
-    document.getElementById('postModal').classList.add('active');
-}
-
-function closePostModal() {
-    document.getElementById('postModal').classList.remove('active');
-}
-
-// Close modals on outside click
-document.getElementById('modal').addEventListener('click', function(e) {
-    if (e.target === this) {
-        closeModal();
-    }
-});
-
-document.getElementById('postModal').addEventListener('click', function(e) {
-    if (e.target === this) {
-        closePostModal();
-    }
-});
-
-// Handle form submission
-document.getElementById('postForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const category = document.getElementById('postCategory').value;
-    const title = document.getElementById('postTitle').value;
-    const content = document.getElementById('postContent').value;
-
-    addPost(category, title, content);
-    closeModal();
-});
-
-function addPost(category, title, content) {
-    const timeline = document.getElementById('timeline');
-    const today = new Date().toISOString().split('T')[0];
-
-    const categoryClass = category === 'cert' ? 'category-cert' : 'category-project';
-    const categoryLabel = category === 'cert' ? 'Certification' : 'Project';
-
-    const postHTML = `
-        <div class="timeline-item" onclick="openPost(this)">
-            <article class="post-card">
-                <div class="post-header">
-                    <span class="post-date">${today}</span>
-                </div>
-                <span class="post-category ${categoryClass}">${categoryLabel}</span>
-                <h3 class="post-title">${title}</h3>
-                <p class="post-content">${content}</p>
-            </article>
-        </div>
-    `;
-
-    timeline.insertAdjacentHTML('afterbegin', postHTML);
-
-    // Update stats
-    updateStats();
-}
-
-function updateStats() {
-    // Update stats when entries are added
-}
 
 // ============================================================
 // Blog View Functions
@@ -236,15 +149,16 @@ function openBlogPost(postId) {
 
 function returnToBlogList() {
     const mainContent = document.getElementById('main-content');
-    mainContent.innerHTML = generateBlogView();
+    mainContent.innerHTML = roadmapHTML + generateBlogView();
     currentView = 'blog';
 }
 
 // ============================================================
 // Navigation between views
 // ============================================================
+const roadmapHTML = document.getElementById('main-content').innerHTML.replace(/<div id="blog-container"><\/div>/, '');
+
 const viewsContent = {
-    timeline: document.getElementById('main-content').innerHTML,
     certs: `
         <div class="section-header">
             <h2 class="section-title">Certifications</h2>
@@ -322,7 +236,10 @@ const viewsContent = {
     `
 };
 
-let currentView = 'timeline';
+let currentView = 'blog';
+
+// Render blog view on page load
+document.getElementById('main-content').innerHTML = roadmapHTML + generateBlogView();
 
 document.querySelectorAll('.nav-button').forEach(button => {
     button.addEventListener('click', function() {
@@ -335,7 +252,7 @@ document.querySelectorAll('.nav-button').forEach(button => {
         const mainContent = document.getElementById('main-content');
 
         if (view === 'blog') {
-            mainContent.innerHTML = generateBlogView();
+            mainContent.innerHTML = roadmapHTML + generateBlogView();
         } else {
             mainContent.innerHTML = viewsContent[view];
         }
