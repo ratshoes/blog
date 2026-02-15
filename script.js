@@ -144,7 +144,7 @@ function openBlogPost(postId) {
         </div>
     `;
 
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.querySelector('.blog-post-full').scrollIntoView({ behavior: 'smooth' });
 }
 
 function returnToBlogList() {
