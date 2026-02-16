@@ -74,6 +74,32 @@ const blogPosts = [
 
 <p>For the first time I actually feel like I have a plan I can stick to. That might not sound like much but for someone who has started and stopped more times than I can count, it means a lot</p>`
     },
+    {
+        id: 'resetting-and-lessons-learned',
+        title: 'Resetting, Reflecting, and Finally Moving Forward',
+        date: '2026-02-15',
+        category: 'Personal',
+        categoryClass: 'category-career',
+        featuredImage: 'blog-images/date.jpg',
+        excerpt: 'Taking the time to reset and gather the lessons learned over these past few months. Time does not wait for anyone.',
+        content: `<p>Taking the time to reset along with gathering lessons learned among the last few months</p>
+
+<p>There have been a few things I learned over the past few months. Besides being a lifelong learner, there are lessons that should only have to be learned once to capture their teachings and future impact. The driving forces behind my motivation to finally follow through on my plans have been significant and eye opening. These past four years have been a blur. I never felt the passage of time but now I realize that it is very real. Constant progress eluded me because I never took the formal steps to accomplish my goals</p>
+
+<h2>Time Catches Up</h2>
+
+<p>This year I set formal goals and I am proud to see that I am following through with them. I realized my parents are getting older. They are not the people I thought would never change because I was so used to them staying the same. My dad turned 72 years old a few days ago and that milestone just blew my mind</p>
+
+<p>That realization moved something within me. I should call my parents more and make them proud</p>
+
+<h2>Finding My Way Back</h2>
+
+<p>My goals this year outlined by the creation of this blog are really just here for me to hold myself accountable and as a journal. I have really just begun to find myself after being lost for a few months. I did not know how I would recover but one day I woke up and decided I was going to make it work. I would pull myself out of the rut I was in and continue to push myself harder than I ever have</p>
+
+<p>I was fortunate enough with this new job I currently have. It is my last chance to succeed realistically. Besides that, not saying no to new relationships both new and old, all the while growing individually, has made this easier for me</p>
+
+<p>There will always be people who care about you. Forming new bonds, whether deep or shallow, will show you things about yourself you never knew. And some people who have always been there but now show up more than ever are a reminder that no matter where you are in life, someone always cares</p>`
+    },
     // Add new blog posts above this line
 ];
 
