@@ -148,7 +148,7 @@ function generateBlogView() {
         `;
     }
 
-    const cards = blogPosts.map(post => `
+    const cards = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date)).map(post => `
         <article class="post-card blog-card" onclick="openBlogPost('${post.id}')">
             ${post.featuredImage
                 ? `<img src="${post.featuredImage}" alt="${post.title}" class="blog-card-image" loading="lazy">`
