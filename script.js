@@ -100,6 +100,34 @@ const blogPosts = [
 
 <p>There will always be people who care about you. Forming new bonds, whether deep or shallow, will show you things about yourself you never knew. And some people who have always been there but now show up more than ever are a reminder that no matter where you are in life, someone always cares</p>`
     },
+    {
+        id: 'why-simply-saying-is-not-enough',
+        title: 'Why Simply Saying Is Not Enough',
+        date: '2026-02-18',
+        category: 'Personal',
+        categoryClass: 'category-career',
+        featuredImage: 'blog-images/smag1.png',
+        excerpt: 'Saying you will do something and failing to follow through compounds over time. Discipline has to be rooted in something more stable than impulse.',
+        content: `<h2>On Discipline, Accountability, and the Road Ahead</h2>
+
+<p>Simply saying is not enough</p>
+
+<p>Action does not require motivation to produce a positive outcome. While motivation helps, discipline should not be driven by impulse. Impulsivity is unstable, and the emotion behind it fades. Discipline rooted in impulse can lead to burnout or, on the other end, inconsistency.</p>
+
+<p>For a long time, I set things aside for later and failed to think more than a few steps ahead. While studying for these certifications, I've regained something I lost over time, and that is curiosity for learning, not just memorizing. Learning requires more than retaining information. It has to be applied in practice, not just understood on paper. I've also realized I don't need to tie deadlines to pressure and cram material down my throat. The process should be measured, consistent, and intentional at ALL times not just when stakes are high.</p>
+
+<h2>The Pattern I Started to See</h2>
+
+<p>Tying this back to my original thesis, simply saying something is not enough. Saying I will do something and then failing to follow through began to spill into other areas of my life, not just academics. I started to see the pattern more clearly. Sometimes it takes honest introspection and reflection on past experiences to understand what was really happening.</p>
+
+<p>This is not a quick fix, but committing to this plan for the year will prove to myself that I can do what I set out to do.</p>
+
+<h2>CCNA and What Comes After</h2>
+
+<p>The next certification, the CCNA, is one I've had my eye on for years. Realistically, it may not move the needle as much as I once thought. I already have solid networking experience from my time in IT. Still, it carries weight. At the very least, it validates that I understand the theory behind the work I've been doing. The certification that truly changes trajectories for many people is the CCNP or Cisco Certified Network Professional. That one demands respect. It typically requires at least six months of intense study. It's not a checkbox credential. It is a commitment.</p>
+
+<p>If I can compress six months of focused study into three through discipline and structure, I will earn it this year we shall see, we shall see.</p>`
+    },
     // Add new blog posts above this line
 ];
 
