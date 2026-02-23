@@ -347,7 +347,7 @@ function typeText(element, text, speed = 100) {
 window.addEventListener('load', function() {
     const titleElement = document.getElementById('typed-title');
     if (titleElement) {
-        setTimeout(() => typeText(titleElement, "Hi I'm Steven", 80), 500);
+        setTimeout(() => typeText(titleElement, "Hi I'm Steven, welcome to my blog", 80), 500);
     }
 });
 
@@ -386,7 +386,7 @@ function scrambleText(element, originalText) {
 setTimeout(() => {
     const titleElement = document.getElementById('typed-title');
     if (titleElement) {
-        const originalText = "Hi I'm Steven";
+        const originalText = "Hi I'm Steven, welcome to my blog";
         titleElement.addEventListener('mouseenter', () => {
             scrambleText(titleElement, originalText);
         });
