@@ -203,16 +203,82 @@ function openBlogPost(postId) {
 
 function returnToBlogList() {
     const mainContent = document.getElementById('main-content');
-    mainContent.innerHTML = roadmapHTML + generateBlogView();
+    mainContent.innerHTML = generateBlogView();
     currentView = 'blog';
 }
 
 // ============================================================
 // Navigation between views
 // ============================================================
-const roadmapHTML = document.getElementById('main-content').innerHTML.replace(/<div id="blog-container"><\/div>/, '');
+
+function animateProgressBars() {
+    document.querySelectorAll('.progress-fill').forEach(fill => {
+        const width = fill.style.width;
+        fill.style.width = '0';
+        setTimeout(() => { fill.style.width = width; }, 100);
+    });
+}
 
 const viewsContent = {
+    roadmap: `
+        <div class="section-header">
+            <h2 class="section-title">2026 Certification Roadmap</h2>
+        </div>
+        <div style="display: grid; gap: var(--spacing-lg);">
+            <div class="post-card" style="border-left: 4px solid #dc2626;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-sm);">
+                    <h3 class="post-title" style="margin: 0;">CompTIA Security+</h3>
+                    <span class="post-date" style="background: #450a0a; color: #fecaca; border-color: #dc2626;">COMPLETED</span>
+                </div>
+                <p class="post-content">Foundation certification covering security concepts, threats, architecture, and operations. Passed Feb 13, 2026.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-label"><span>Progress</span><span>100%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%; background: linear-gradient(90deg, #ef4444, #dc2626);"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-card" style="border-left: 4px solid #0ea5e9;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-sm);">
+                    <h3 class="post-title" style="margin: 0;">Cisco CCNA</h3>
+                    <span class="post-date">Target: Q1 2026</span>
+                </div>
+                <p class="post-content">Network fundamentals, IP connectivity, security fundamentals, and automation basics.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-label"><span>Progress</span><span>0%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%; background: linear-gradient(90deg, #0ea5e9, #0284c7);"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-card" style="border-left: 4px solid #f59e0b;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-sm);">
+                    <h3 class="post-title" style="margin: 0;">AWS Advanced Networking - Specialty</h3>
+                    <span class="post-date">Target: Q2 2026</span>
+                </div>
+                <p class="post-content">Advanced AWS networking architecture, hybrid connectivity, and network automation.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-label"><span>Progress</span><span>0%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%; background: linear-gradient(90deg, #f59e0b, #d97706);"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-card" style="border-left: 4px solid #8b5cf6;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-sm);">
+                    <h3 class="post-title" style="margin: 0;">Cisco CCNP Enterprise</h3>
+                    <span class="post-date">Target: Q3-Q4 2026</span>
+                </div>
+                <p class="post-content">Advanced enterprise networking including routing, switching, wireless, and automation.</p>
+                <div class="progress-bar-container">
+                    <div class="progress-label"><span>Progress</span><span>0%</span></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%; background: linear-gradient(90deg, #8b5cf6, #7c3aed);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `,
     certs: `
         <div class="section-header">
             <h2 class="section-title">Certifications</h2>
@@ -293,7 +359,7 @@ const viewsContent = {
 let currentView = 'blog';
 
 // Render blog view on page load
-document.getElementById('main-content').innerHTML = roadmapHTML + generateBlogView();
+document.getElementById('main-content').innerHTML = generateBlogView();
 
 document.querySelectorAll('.nav-button').forEach(button => {
     button.addEventListener('click', function() {
@@ -306,9 +372,10 @@ document.querySelectorAll('.nav-button').forEach(button => {
         const mainContent = document.getElementById('main-content');
 
         if (view === 'blog') {
-            mainContent.innerHTML = roadmapHTML + generateBlogView();
+            mainContent.innerHTML = generateBlogView();
         } else {
             mainContent.innerHTML = viewsContent[view];
+            if (view === 'roadmap') animateProgressBars();
         }
 
     });
