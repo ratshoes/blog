@@ -131,15 +131,15 @@ body {
 .hero {
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--spacing-3xl) var(--spacing-xl);
+    padding: var(--spacing-lg) var(--spacing-xl) var(--spacing-md);
     position: relative;
 }
 
 .terminal {
     background: var(--md-sys-color-surface-container);
     border: 1px solid var(--md-sys-color-outline);
-    padding: var(--spacing-xl);
-    margin-bottom: var(--spacing-2xl);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
     font-family: 'JetBrains Mono', monospace;
 }
 
@@ -221,12 +221,12 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: var(--spacing-md);
-    margin-bottom: var(--spacing-3xl);
+    margin-bottom: var(--spacing-md);
 }
 
 .stat-card {
     background: var(--md-sys-color-surface-container);
-    padding: var(--spacing-xl);
+    padding: var(--spacing-lg) var(--spacing-xl);
     border-radius: var(--radius-lg);
     border: 1px solid var(--md-sys-color-outline);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

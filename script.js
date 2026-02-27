@@ -378,6 +378,7 @@ document.querySelectorAll('.nav-button').forEach(button => {
             if (view === 'roadmap') animateProgressBars();
         }
 
+        mainContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 });
 
