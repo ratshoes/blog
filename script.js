@@ -128,50 +128,6 @@ const blogPosts = [
 
 <p>If I can compress six months of focused study into three through discipline and structure, I will earn it this year we shall see, we shall see.</p>`
     },
-    {
-        id: 'ai-and-networking',
-        title: 'How AI Will and Will Not Replace Networking',
-        date: '2026-03-02',
-        category: 'Career',
-        categoryClass: 'category-career',
-        featuredImage: null,
-        excerpt: 'Everyone is talking about AI replacing jobs. Networking is not immune to that conversation. But the reality is more complicated than the headlines suggest.',
-        content: `<p>Everyone has an opinion on what AI is going to eliminate. Networking keeps coming up in that conversation and I think most of what is being said misses the point</p>
-
-<p>I have been studying for the CCNA and one of the things that keeps standing out to me is how much foundational knowledge still matters. Not because certification vendors are stuck in the past but because the infrastructure AI runs on has to be designed and maintained by someone who understands it at a low level. That has not changed</p>
-
-<h2>What AI Is Actually Good At in Networking</h2>
-
-<p>AI is genuinely useful for pattern recognition at scale. Things like anomaly detection in network traffic, predictive alerting before a link fails, and automated remediation for well-defined problems. These are real capabilities and they are being deployed right now in tools like Cisco's AI Network Analytics and similar platforms from other vendors</p>
-
-<p>If your job is purely reactive, meaning you wait for a ticket and then reboot something, that workflow is going to get compressed. Not necessarily eliminated but compressed. AI can close a class of low-complexity tickets faster than a human can open the dashboard</p>
-
-<p>Configuration management is another area. Intent-based networking lets you describe what you want a network to do and the system figures out how to configure it. Cisco DNA Center operates on this principle. You stop writing individual commands and start writing policy. That is a real shift</p>
-
-<h2>What AI Cannot Do</h2>
-
-<p>AI cannot reason through a problem it has never seen before without a human in the loop. Network environments are not uniform. Every organization has legacy gear, one-off configurations, undocumented workarounds, and business constraints that do not show up in training data. When something breaks in a way that is genuinely novel, someone who understands how packets actually move through a network is still the one who fixes it</p>
-
-<p>Design is another thing AI cannot own. Someone has to decide the topology, the redundancy model, how traffic is segmented, where the trust boundaries are. AI can assist and validate but the responsibility and the judgment still belong to a person. That person needs to know what they are doing</p>
-
-<p>Security is the same way. You can automate detection and even some response but the strategic decisions about how a network is hardened, what gets monitored and why, how you respond to an incident that does not match a known signature, those decisions require genuine understanding not pattern matching</p>
-
-<h2>Why the CCNA Still Makes Sense</h2>
-
-<p>I have thought about this. If AI is going to handle configuration and monitoring, why spend months learning routing protocols and subnetting and spanning tree</p>
-
-<p>Because abstraction leaks. Any tool that abstracts away complexity will eventually expose the underlying layer when something goes wrong. And when it does, the engineer who understands what is underneath is worth far more than the one who only knows the tool. The CCNA builds that foundation. It is not just about passing the exam. It is about having the mental model that makes you effective when things break in ways no AI anticipated</p>
-
-<p>The networking engineers I respect most are not the ones who memorized commands. They are the ones who can look at a problem and reason through it step by step. That skill does not get automated. It gets more valuable</p>
-
-<h2>Where This Actually Lands</h2>
-
-<p>AI will change what networking engineers spend their time on. Less time on repetitive configuration tasks, more time on design, troubleshooting complex issues, and integrating new capabilities. The ceiling on what one person can manage will go up. That probably means fewer people are needed to operate the same infrastructure, which is a real thing worth acknowledging honestly</p>
-
-<p>But the idea that networking knowledge becomes irrelevant is backwards. The people who get displaced will be the ones who never developed real depth. The ones who understand the fundamentals will adapt and stay ahead of the tooling rather than fall behind it</p>
-
-<p>That is the bet I am making by studying for this certification. Not that everything stays the same but that understanding how things actually work will always matter</p>`
-    },
     // Add new blog posts above this line
 ];
 
