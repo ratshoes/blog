@@ -128,6 +128,40 @@ const blogPosts = [
 
 <p>If I can compress six months of focused study into three through discipline and structure, I will earn it this year we shall see, we shall see.</p>`
     },
+    {
+        id: 'how-working-at-an-msp-changed-my-life',
+        title: 'How Working at an MSP Changed My Life',
+        date: '2026-03-02',
+        category: 'Career',
+        categoryClass: 'category-career',
+        featuredImage: 'blog-images/msp.jpg',
+        excerpt: 'Nearly a year supporting a vast network of law offices taught me more about people, pressure, and problem-solving than any course or certification ever could.',
+        content: `<p>I never thought there would come a day where I would be providing technical support to customers working in the legal world. It has been nearly a year since my time working for a vast network of law offices, each with their own intricacies and tech stacks. The reality was that it was a grind. Every morning I was up by 6 AM for a 7 to 4 shift, and by the time I logged in the calls were already flooding in — users dealing with broken software, locked accounts, printers that refused to cooperate, you name it.</p>
+
+<h2>Learning as You Go</h2>
+
+<p>We had documentation, but no document prepares you for every situation. A lot of it came down to quick adaptation. I was often solving problems I had never seen before in real time, with someone on the other end who in many cases knew their specific software better than I did. It pitted my resourcefulness against the clock. I had roughly 15 minutes to work through an issue and find a solution before the caller started to lose patience. It was a delicate balance because I was not just troubleshooting a machine — I was managing a person at the same time.</p>
+
+<p>Issues ranged from simple things like password resets to more involved problems like users being unable to print to their designated network printer. There was hardly any downtime. It was rapid fire throughout the day, every day. That environment taught me more about business expectations and professional composure than anything I had studied before.</p>
+
+<p>Turnover was high. Four people left during my time there. The pressure was constant, and there was always an unspoken expectation from both the clients and the company that you knew exactly what you were doing. As a high performer I was hard on myself whenever I had to escalate a ticket. But I made it a habit to go back and read the notes on how the issue was resolved. Every escalation became a lesson.</p>
+
+<h2>Soft Skills Are Not Optional</h2>
+
+<p>The job was documentation heavy and pattern focused. Beyond the phone calls, we also went onsite, which demanded an entirely different skillset. I used to think people in tech could get by on technical ability alone and leave the people skills to someone else. I was wrong. You have to be able to translate a complex problem into something digestible enough for a non-technical person to understand and trust. That skill does not come naturally for a lot of us in this field. It took conscious effort to develop it.</p>
+
+<h2>Kat</h2>
+
+<p>I remember one week being on call and getting woken up at 6 AM by one of our more difficult clients. For the sake of this post I will call her Kat. Kat had been practicing law for many years and was approaching the later stages of her career. She was sharp, particular, and had no interest in workarounds. If something did not work exactly the way she was accustomed to, there was no negotiating around it.</p>
+
+<p>The issue was her Outlook client. She was used to having her inbox configured to only display emails from the past year. Anything beyond that and the client slowed to a crawl. When I got the call, her main email account had desynced entirely, so I re-added it through the Control Panel. That restored access to her email, but it also reset the sync window back to the default, which meant the client was now pulling in everything and grinding to a halt exactly as she feared.</p>
+
+<p>While she was making her frustration known I was already working in the background. I reconfigured the one-year limit on the account and confirmed the setting was applied. The problem was that Outlook needed several hours to process and enforce that change on a mailbox her size. Telling Kat to wait was not going to go over well.</p>
+
+<p>So I redirected her to Outlook on the web. Same inbox, same emails, none of the client-side slowdown. I walked her through logging in, confirmed everything looked right, and let her know the desktop client would be back to normal by the time she was done for the day. I followed up that afternoon. The sync had completed, the one-year window was back in place, and the client was running fine. She did not thank me, but she did not call back either. In that line of work, that counted as a win.</p>
+
+<p>That morning stuck with me. The fix itself was not complicated. What made it work was staying calm under pressure, thinking two steps ahead, and knowing when to offer an alternative instead of making someone wait on a problem they could not see. That is the part of this work that no lab environment teaches you. You only get it from the calls.</p>`
+    },
     // Add new blog posts above this line
 ];
 
