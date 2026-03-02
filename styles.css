@@ -805,6 +805,10 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .stat-card:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+    }
+
     .header-content {
         flex-direction: column;
         gap: var(--spacing-md);
@@ -826,5 +830,15 @@ body {
 
     .blog-post-body {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card:last-child:nth-child(odd) {
+        grid-column: auto;
     }
 }
