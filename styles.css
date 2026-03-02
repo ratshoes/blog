@@ -276,6 +276,26 @@ body {
 }
 
 
+/* System Status */
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--md-sys-color-success);
+    margin-right: 8px;
+    box-shadow: 0 0 6px var(--md-sys-color-success);
+    animation: pulse 2s ease-in-out infinite;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 6px var(--md-sys-color-success); }
+    50% { opacity: 0.6; box-shadow: 0 0 12px var(--md-sys-color-success); }
+}
+
 /* Main Content */
 .container {
     max-width: 1200px;
