@@ -812,6 +812,16 @@ body {
     .header-content {
         flex-direction: column;
         gap: var(--spacing-md);
+        align-items: flex-start;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        gap: var(--spacing-xs);
+    }
+
+    .nav-button {
+        flex-shrink: 0;
     }
 
     .section-header {
