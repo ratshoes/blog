@@ -162,6 +162,38 @@ const blogPosts = [
 
 <p>That morning stuck with me. The fix itself was not complicated. What made it work was staying calm under pressure, thinking two steps ahead, and knowing when to offer an alternative instead of making someone wait on a problem they could not see. That is the part of this work that no lab environment teaches you. You only get it from the calls.</p>`
     },
+    {
+        id: 'uncertainty-for-the-future',
+        title: 'Uncertainty for the Future',
+        date: '2026-03-21',
+        category: 'Personal',
+        categoryClass: 'category-career',
+        featuredImage: 'blog-images/amsterdamAirport.jpg',
+        excerpt: 'Sometimes the path ahead is not clear because the present demands too much of your attention. Halfway through the CCNA and a month away from everything familiar.',
+        content: `<p>There is a version of this year I mapped out clearly. Certifications by quarter, study hours logged, milestones hit on schedule. That version made sense on paper. Then real life showed up.</p>
+
+<p>It is hard to see the path forward when the present is already asking a lot of you. Sometimes the weight of what is happening right now makes the future feel almost theoretical. The goals are still there, the drive is still there, but the distance between where you are and where you are going can feel insurmountable when the present is not cooperating. That is something I have been sitting with lately and something I think a lot of people carrying long term goals understand without needing it explained.</p>
+
+<h2>Where Things Stand</h2>
+
+<p>The CCNA is about halfway done. The foundation is solid and the material is making sense in a way that feels applied, not just memorized. This is not a certification I want to sprint through. Networking fundamentals are things I use every day at work and I want the knowledge to actually be there when I need it, not just good enough to pass a test.</p>
+
+<p>Q1 was the original target. That shifts to later in the year now, and I am at peace with that.</p>
+
+<h2>Going Offline</h2>
+
+<p>A month long trip is coming. I will be largely without internet access, which in 2026 is a genuinely strange thing to anticipate. The lifestyle I have been living is built around constant connectivity, media, information, background noise at all hours. All of that goes away. What replaces it is something much simpler.</p>
+
+<p>The study materials are coming with me. Honestly, being removed from the usual noise might be exactly the kind of environment where real progress gets made. No distractions, no context switching, just time and focus.</p>
+
+<h2>The Path Forward</h2>
+
+<p>Two more months of focused study is what I am estimating to get this done. May is when I return. May is when this picks back up in full.</p>
+
+<p>The future is not always visible from where you are standing. Sometimes you just have to keep moving and trust that the path will get clearer as you go.</p>
+
+<p>Signing off until May.</p>`
+    },
     // Add new blog posts above this line
 ];
 
