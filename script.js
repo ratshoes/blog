@@ -457,6 +457,29 @@ let currentView = 'blog';
 // Render blog view on page load
 document.getElementById('main-content').innerHTML = generateBlogView();
 
+// Populate stats
+(function() {
+    const sorted = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
+    const today = new Date();
+    const mostRecent = new Date(sorted[0].date);
+    const firstPost = new Date(sorted[sorted.length - 1].date);
+    const daysSince = Math.floor((today - mostRecent) / 86400000);
+    const journeyDays = Math.floor((today - firstPost) / 86400000);
+
+    document.getElementById('postsPublished').textContent = blogPosts.length;
+    document.getElementById('daysSincePost').textContent = daysSince;
+    document.getElementById('certsEarned').textContent = '1 of 4';
+    document.getElementById('currentFocus').textContent = 'CCNA';
+    document.getElementById('timeOnJourney').textContent = journeyDays;
+})();
+
+// Scroll to blog posts on initial load
+window.addEventListener('load', function() {
+    setTimeout(() => {
+        document.getElementById('main-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 400);
+});
+
 document.querySelectorAll('.nav-button').forEach(button => {
     button.addEventListener('click', function() {
         document.querySelectorAll('.nav-button').forEach(b => b.classList.remove('active'));
