@@ -194,6 +194,36 @@ const blogPosts = [
 
 <p>Signing off until May.</p>`
     },
+    {
+        id: 'network-design-and-real-application-use',
+        title: 'Network Design and Real Application Use',
+        date: '2026-04-04',
+        category: 'Career',
+        categoryClass: 'category-career',
+        featuredImage: 'blog-images/diagram.png',
+        excerpt: 'The best classroom is sometimes the room you are already standing inside of. A rough sketch, two segmented networks, and a lot of time to think.',
+        content: `<p>The best classroom is sometimes the room you are already standing inside of. Or in my case, the ship.</p>
+
+<h2>Working With What You Have</h2>
+
+<p>With continuation to my study on the CCNA there are certain things that have curtailed my development in environments where I can't actively browse the internet with enough time. Since I can't access the internet through traditional means what I did was review the very system that I am getting familiar with as pictured in the diagram. It was my attempt at a very rough draft (note the artistic capability). I've always been more of a visual learner and one that also learns through applying practices not just theoretical absorption of information.</p>
+
+<p>This is what I believe is the most accurate rendition of what system I am working with. It has 2 segmented networks that separates near the top through something we call a convergence router and then a convergence switch.</p>
+
+<h2>Breaking Down the Architecture</h2>
+
+<p>Network segmentation at this level is not just an organizational choice, it is a security and performance decision. Separating networks limits how far traffic travels and controls what devices can communicate with each other without going through a defined point first.</p>
+
+<p>The convergence router is the handoff between those two segments. It handles the routing decisions, determining where packets go when they need to cross from one network into the other. Below that, the convergence switch aggregates the downstream connections and distributes traffic across the devices within each segment. Together they form the central hub of the whole system, the point where everything either passes through or gets stopped.</p>
+
+<p>This kind of tiered design is common in environments where traffic control and isolation matter. Each segment can operate independently while still having a defined path for communication when needed. Understanding why a network is built this way, not just how it functions on paper, is exactly the kind of context the CCNA is pushing me toward.</p>
+
+<h2>Field Notes</h2>
+
+<p>Besides this whole presentation I ran out of snacks out here as I grossly underestimated how much I would eat in one day and I might be getting a little sea sick from this poor weather and waves constantly crashing on the ship hahaha.</p>
+
+<p>You take your study sessions where you can get them, rough weather and empty snack stash included. Look to the past to understand the future. The systems built before you carry the logic of every problem that came before yours.</p>`
+    },
     // Add new blog posts above this line
 ];
 
