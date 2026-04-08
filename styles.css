@@ -1,9 +1,9 @@
 :root {
-    /* Warm Dark Theme - optimized for mobile reading and casual engagement */
-    --md-sys-color-primary: #3b82f6;
-    --md-sys-color-on-primary: #ffffff;
-    --md-sys-color-primary-container: #1e3a5f;
-    --md-sys-color-on-primary-container: #bfdbfe;
+    /* Warm Amber Editorial - optimized for reading comfort and engagement */
+    --md-sys-color-primary: #f59e0b;
+    --md-sys-color-on-primary: #1c1917;
+    --md-sys-color-primary-container: #2d1f07;
+    --md-sys-color-on-primary-container: #fcd34d;
 
     --md-sys-color-secondary: #a8a29e;
     --md-sys-color-on-secondary: #1c1917;
@@ -15,10 +15,10 @@
     --md-sys-color-surface-container: #292524;
     --md-sys-color-surface-container-low: #211e1b;
     --md-sys-color-surface-container-high: #3d3835;
-    --md-sys-color-on-surface: #e7e5e4;
-    --md-sys-color-on-surface-variant: #a8a29e;
+    --md-sys-color-on-surface: #ede8df;
+    --md-sys-color-on-surface-variant: #c4bdb6;
 
-    --md-sys-color-outline: #44403c;
+    --md-sys-color-outline: #57534e;
     --md-sys-color-outline-variant: #292524;
 
     --md-sys-color-success: #22c55e;
@@ -421,9 +421,9 @@ body {
 }
 
 .category-career {
-    background: #1e3142;
-    color: #93c5fd;
-    border: 1px solid #3b82f6;
+    background: #2d1f07;
+    color: #fcd34d;
+    border: 1px solid #f59e0b;
 }
 
 .category-networking {
@@ -716,7 +716,7 @@ body {
     font: var(--md-sys-typescale-body-large);
     font-size: 1.125rem;
     line-height: 1.85;
-    color: #d6d3d1;
+    color: #ddd5c8;
 }
 
 .blog-post-body h2 {
