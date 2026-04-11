@@ -224,6 +224,26 @@ const blogPosts = [
 
 <p>You take your study sessions where you can get them, rough weather and empty snack stash included. Look to the past to understand the future. The systems built before you carry the logic of every problem that came before yours.</p>`
     },
+    {
+        id: 'thoughts-on-ai-displacing-workers',
+        title: 'Thoughts on AI Displacing Workers',
+        date: '2026-04-12',
+        category: 'Personal',
+        categoryClass: 'category-career',
+        featuredImage: 'blog-images/smls.png',
+        excerpt: 'It wasn\'t until recently that I realized AI displacing workers could be a very real possibility. The tools have changed faster than most people are ready for.',
+        content: `<p>It wasn't until recently that I realized this could be a very real possibility. I've spent the last month fiddling around with a local large language model (LLM) and the bounds of progress have been pushed further. Frontiers have been set and new benchmarks have flown way past the LLMs of two years ago. I remember when I installed my first LLM a while back and I was quite amazed at its ability to write stories.</p>
+
+<p>I wasn't too impressed with the coding capabilities though, since they had not reached ease of use without having to constantly read through the code and see what needed fixing. It was too much of a hassle and it was counterproductive. Now that is a lot different. Even those without a prior discipline in coding could easily do so using available tools, such as Claude Code. Using the latest model was eye opening. The results of using it turned projects that would take me a week into a matter of a trivial 30 minutes. These tools will absolutely have an impact on the white collar worker, more so the entry level worker, but even so they will cause the currently employed to work even harder than they did before just to earn the same amount of money.</p>
+
+<h2>The White Collar Bloodbath</h2>
+
+<p>People should be scared. So many jobs will be lost. It will be a white collar bloodbath. No, AI will not replace your job today, or even tomorrow. Perhaps it is a matter of a few short years for the changes to be fully evident. Gone is the era of the junior software engineer, the paralegal, the middle man that was the paper pusher. I personally do not see an immediate solution other than just keep going on the path that I am on. Hopefully the work I do is physical enough that it still requires a human for hardware installation.</p>
+
+<h2>No Clean Answer</h2>
+
+<p>I don't have a clean answer to any of this and honestly neither does anyone else. What I can control is the work I put in today and the skills I build for tomorrow. The landscape is shifting whether we are ready for it or not. The best any of us can do is stay ahead of the curve for as long as possible and not pretend the wave is not coming.</p>`
+    },
     // Add new blog posts above this line
 ];
 
