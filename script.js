@@ -225,6 +225,28 @@ const blogPosts = [
 <p>You take your study sessions where you can get them, rough weather and empty snack stash included. Look to the past to understand the future. The systems built before you carry the logic of every problem that came before yours.</p>`
     },
     {
+        id: 'a-new-era',
+        title: 'A New Era',
+        date: '2026-04-28',
+        category: 'Personal',
+        categoryClass: 'category-career',
+        featuredImage: 'blog-images/belfast.jpg',
+        excerpt: 'A month and a half offshore in Belfast comes to a close. Back to civilization, back to the grind, and back to a goal that has not gone anywhere.',
+        content: `<h2>A cloudy day in Belfast</h2>
+
+<p>Now that the mission is complete after a grueling month and a half, I await my return back home. The mission came with its own challenges and struggles unique to a setting in which not many care to be a part of. It is indeed difficult to be away from civilization with barely any contact to the outside world. Then again, you also get used to a daily routine, and the convenience of having everything available in one place can be beneficial or to one's detriment. Working 12 hour shifts every day became commonplace, along with immediately going to sleep right after the shift. This was a testament to how adaptable humans can be. The shock of starting something new and unfamiliar quickly becomes a sense of familiarity with enough time.</p>
+
+<p>There are many moments where it gets too quiet and you are there with your own thoughts. It can be quite frightening if you think too much. I had a long time to think, as well as study. I cannot say I am ready to take the exam just yet but we are getting there. Other than the goal of taking that certification, the task of earning more in the current state of the job market for tech is a formidable endeavour.</p>
+
+<h2>The Return</h2>
+
+<p>There is something strange about coming back to everything after a long stretch of being removed from it. The noise returns all at once. Notifications, news, the conversations you missed, the pace of things that did not slow down while you were gone. Readjusting takes a moment. But being stripped of all of that for a while also gives you a kind of clarity that is hard to come by when you are constantly in the middle of it.</p>
+
+<p>The CCNA is still the goal. It was before I left and it will be the focus when I get home. The exam date is not set but the direction is clear. What this stretch taught me is that consistency matters more than conditions. You study on a ship, you study exhausted after a 12 hour shift, you study when you would rather be doing anything else. That is the only version of discipline that actually holds up.</p>
+
+<p>The job market is its own challenge that I am returning to with no illusions about it being easy. But then, nothing worth doing has been. More than anything though, I am looking forward to seeing my parents and my girlfriend again. That is the part that no amount of routine or adaptation can substitute for. One step at a time, and the next one starts when the plane lands.</p>`
+    },
+    {
         id: 'thoughts-on-ai-displacing-workers',
         title: 'Thoughts on AI Displacing Workers',
         date: '2026-04-12',
@@ -357,7 +379,7 @@ const viewsContent = {
             <div class="post-card" style="border-left: 4px solid #0ea5e9;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-sm);">
                     <h3 class="post-title" style="margin: 0;">Cisco CCNA</h3>
-                    <span class="post-date">Target: Q1 2026</span>
+                    <span class="post-date">Target: June 2026</span>
                 </div>
                 <p class="post-content">Network fundamentals, IP connectivity, security fundamentals, and automation basics.</p>
                 <div class="progress-bar-container">
@@ -370,7 +392,7 @@ const viewsContent = {
             <div class="post-card" style="border-left: 4px solid #f59e0b;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-sm);">
                     <h3 class="post-title" style="margin: 0;">AWS Advanced Networking - Specialty</h3>
-                    <span class="post-date">Target: Q2 2026</span>
+                    <span class="post-date">Target: Q3 2026</span>
                 </div>
                 <p class="post-content">Advanced AWS networking architecture, hybrid connectivity, and network automation.</p>
                 <div class="progress-bar-container">
@@ -383,7 +405,7 @@ const viewsContent = {
             <div class="post-card" style="border-left: 4px solid #8b5cf6;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-sm);">
                     <h3 class="post-title" style="margin: 0;">Cisco CCNP Enterprise</h3>
-                    <span class="post-date">Target: Q3-Q4 2026</span>
+                    <span class="post-date">Target: Q4 2026</span>
                 </div>
                 <p class="post-content">Advanced enterprise networking including routing, switching, wireless, and automation.</p>
                 <div class="progress-bar-container">
@@ -432,7 +454,7 @@ const viewsContent = {
                 </div>
                 <h3 class="post-title">CCNA</h3>
                 <p class="post-content" style="margin-bottom: var(--spacing-lg);">Networking fundamentals, IP connectivity, security fundamentals, and automation basics.</p>
-                <span class="post-category category-cert">Target: Q1 2026</span>
+                <span class="post-category category-cert">Target: June 2026</span>
             </div>
 
             <!-- AWS Card - 0% progress -->
@@ -449,7 +471,7 @@ const viewsContent = {
                 </div>
                 <h3 class="post-title">AWS Advanced Networking</h3>
                 <p class="post-content" style="margin-bottom: var(--spacing-lg);">Specialty certification for complex AWS networking and hybrid connectivity solutions.</p>
-                <span class="post-category category-cert">Target: Q2 2026</span>
+                <span class="post-category category-cert">Target: Q3 2026</span>
             </div>
 
             <!-- CCNP Card - 0% progress -->
@@ -466,7 +488,7 @@ const viewsContent = {
                 </div>
                 <h3 class="post-title">CCNP Enterprise</h3>
                 <p class="post-content" style="margin-bottom: var(--spacing-lg);">Professional-level certification for advanced enterprise networking solutions.</p>
-                <span class="post-category category-cert">Target: Q3-Q4 2026</span>
+                <span class="post-category category-cert">Target: Q4 2026</span>
             </div>
         </div>
     `
