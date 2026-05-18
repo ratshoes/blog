@@ -266,6 +266,26 @@ const blogPosts = [
 
 <p>I don't have a clean answer to any of this and honestly neither does anyone else. What I can control is the work I put in today and the skills I build for tomorrow. The landscape is shifting whether we are ready for it or not. The best any of us can do is stay ahead of the curve for as long as possible and not pretend the wave is not coming.</p>`
     },
+    {
+        id: 'small-life-update-new-car',
+        title: 'Small life update - new car, etc.',
+        date: '2026-05-17',
+        category: 'Personal',
+        categoryClass: 'category-career',
+        featuredImage: 'blog-images/smi.jpg',
+        excerpt: 'Back on land, a few months of adjusting, and one calculated but impulsive purchase. Life is moving again.',
+        content: `<p>The past few months have been a blur of constant motion and I'm only now starting to feel the ground beneath my feet again. After a long stretch away from land, I needed to reset, and getting back to see friends and family was exactly that. It's a lifestyle not many are willing to step into, especially on the civilian side of things. I still ask myself sometimes if this is what the next four years look like. My goal is to gradually transition into something a little easier on my body. I don't know where life takes me but I know I want to keep showing up for it.</p>
+
+<p>The consistency of a stable routine and a steady paycheck is what is going to carry me forward. One thing that stands out about life on a ship is that a lot of the daily noise just disappears. Groceries, cooking, the small logistical weight of taking care of yourself day to day, all of that is handled. You show up, you work your shift, you sleep, and you do it again. At first it sounds monotonous but there is a strange comfort in it. The simplicity sharpens your focus.</p>
+
+<p>On a lighter note, I finally pulled the trigger on a new car. I had been going back and forth on it for a while. The real debate was between something practical and something that actually put a smile on my face while still being financially responsible. Normally hitting all three of those marks at once feels impossible but I have been fortunate enough lately to actually meet my savings goals with a little room left over.</p>
+
+<p>I went with a Mustang GT, latest generation. Not something I ever saw myself driving but the more I thought about it the more I realized the window was closing. The V8 is being phased out. We are living in the EV era now and the combustion engine is going the way of the dinosaurs. I didn't want to look back and wish I had done it while I still could. So I did.</p>
+
+<img src="blog-images/mustang.jpg" alt="My new Mustang GT" class="blog-post-hero-image">
+
+<p>The plan is to hold onto it for a couple of years before I do something more impulsive, but we'll see how that goes, haha. Either way, I'm still here. Still working hard. Not a lot has changed on the surface but it has been a while and it felt right to check in. Onto the next.</p>`
+    },
     // Add new blog posts above this line
 ];
 
