@@ -272,7 +272,7 @@ const blogPosts = [
         date: '2026-05-17',
         category: 'Personal',
         categoryClass: 'category-career',
-        featuredImage: 'blog-images/smi.jpg',
+        featuredImage: '',
         excerpt: 'Back on land, a few months of adjusting, and one calculated but impulsive purchase. Life is moving again.',
         content: `<p>The past few months have been a blur of constant motion and I'm only now starting to feel the ground beneath my feet again. After a long stretch away from land, I needed to reset, and getting back to see friends and family was exactly that. It's a lifestyle not many are willing to step into, especially on the civilian side of things. I still ask myself sometimes if this is what the next four years look like. My goal is to gradually transition into something a little easier on my body. I don't know where life takes me but I know I want to keep showing up for it.</p>
 
