@@ -286,6 +286,22 @@ const blogPosts = [
 
 <p>The plan is to hold onto it for a couple of years before I do something more impulsive, but we'll see how that goes, haha. Either way, I'm still here. Still working hard. Not a lot has changed on the surface but it has been a while and it felt right to check in. Onto the next.</p>`
     },
+    {
+        id: 'why-ai-has-no-moat-recent-acquisitions',
+        title: 'Why AI has no moat - Recent acquisitions',
+        date: '2026-05-23',
+        category: 'Career',
+        categoryClass: 'category-career',
+        featuredImage: 'blog-images/7667.jpg',
+        excerpt: 'The data has been mined. The compute gains are shrinking. What comes after the scaling era and who actually wins from here?',
+        content: `<p>If all of the internet has been mined already and all of the good "data" has already been implemented into the most up to date frontier models then what do we have left? The real result that we want to capture is to spread as many datacenters as possible, or in other words spend more on compute for improvements that don't scale as well. In the past Open AI has been able to make massive leaps on compute alone. Take the example of the transition from Chat GPT 3 to Chat GPT 4. Open AI was able to move from 175 billion parameters to a massive 1.8 trillion and that was on the implementation of MoE (Mixture of Experts). However now the improvements we get for newer models are marginal at best; there is the largely known issue of linear results with newer models.</p>
+
+<p>Technology tends to follow S curves, and AI has already had a few of them. Scaling used to mean dramatic, undeniable leaps forward. That era feels on most problems, which raises a real question: if humans cannot reliably distinguish superhuman performance from very good performance, does the distinction even matter? There will be a point where we won't even be able to discern real improvements from small ones.</p>
+
+<p>However there are exceptions. Pure optimization tasks, the kind where you can point to a number and watch it drop, will still show measurable gains. And systems quietly optimized for engagement will keep doing what they do best, which is worth being aware of. But most human endeavors are not optimization problems at their very core. The harder and more interesting challenge is figuring out what to optimize for in the first place, and no amount of compute resolves that.</p>
+
+<p>What likely comes next is a shift toward efficiency and judgment rather than raw capability. The tools are good enough. The question now is how widely they get distributed and who develops the taste to use them well. Taste is not a resource that concentrates in one place, and that might be the most interesting part of where this goes.</p>`
+    },
     // Add new blog posts above this line
 ];
 
