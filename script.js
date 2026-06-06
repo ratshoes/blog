@@ -274,9 +274,7 @@ const blogPosts = [
         categoryClass: 'category-career',
         featuredImage: '',
         excerpt: 'Back on land, a few months of adjusting, and one calculated but impulsive purchase. Life is moving again.',
-        content: `<img src="blog-images/censor.jpg" alt="Small life update" class="blog-post-hero-image">
-
-<p>The past few months have been a blur of constant motion and I'm only now starting to feel the ground beneath my feet again. After a long stretch away from land, I needed to reset, and getting back to see friends and family was exactly that. It's a lifestyle not many are willing to step into, especially on the civilian side of things. I still ask myself sometimes if this is what the next four years look like. My goal is to gradually transition into something a little easier on my body. I don't know where life takes me but I know I want to keep showing up for it.</p>
+        content: `<p>The past few months have been a blur of constant motion and I'm only now starting to feel the ground beneath my feet again. After a long stretch away from land, I needed to reset, and getting back to see friends and family was exactly that. It's a lifestyle not many are willing to step into, especially on the civilian side of things. I still ask myself sometimes if this is what the next four years look like. My goal is to gradually transition into something a little easier on my body. I don't know where life takes me but I know I want to keep showing up for it.</p>
 
 <p>The consistency of a stable routine and a steady paycheck is what is going to carry me forward. One thing that stands out about life on a ship is that a lot of the daily noise just disappears. Groceries, cooking, the small logistical weight of taking care of yourself day to day, all of that is handled. You show up, you work your shift, you sleep, and you do it again. At first it sounds monotonous but there is a strange comfort in it. The simplicity sharpens your focus.</p>
 
