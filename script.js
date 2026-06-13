@@ -309,6 +309,11 @@ const blogPosts = [
 // ============================================================
 // Blog View Functions
 // ============================================================
+function getExcerptFromContent(content, length = 180) {
+    const text = content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    return text.length > length ? text.slice(0, length).replace(/\s+\S*$/, '') + '...' : text;
+}
+
 function generateBlogView() {
     if (blogPosts.length === 0) {
         return `
@@ -334,7 +339,7 @@ function generateBlogView() {
                     <span class="post-date">${post.date}</span>
                 </div>
                 <h3 class="post-title">${post.title}</h3>
-                <p class="blog-card-excerpt">${post.excerpt}</p>
+                <p class="blog-card-excerpt">${getExcerptFromContent(post.content)}</p>
             </div>
         </article>
     `).join('');
