@@ -302,6 +302,24 @@ const blogPosts = [
 
 <p>What likely comes next is a shift toward efficiency and judgment rather than raw capability. The tools are good enough. The question now is how widely they get distributed and who develops the taste to use them well. Taste is not a resource that concentrates in one place, and that might be the most interesting part of where this goes.</p>`
     },
+    {
+        id: 'patience-pays-off-mostly',
+        title: 'Patience pays off... Mostly.',
+        date: '2026-06-12',
+        category: 'Personal',
+        categoryClass: 'category-career',
+        featuredImage: 'blog-images/belfastAgain.jpg',
+        excerpt: '',
+        content: `<p>If I keep doing the same thing and it keeps producing results, then I'm doing the right thing. That's the mantra. That's the religion that's come to define me. Back at my worksite and settling in for another stretch, but this time something feels different. The goal used to be simple: study on the ship, stack certifications, keep moving. That vision hasn't changed, but a new question has started following me around. How do I keep challenging myself here beyond just what's in a textbook?</p>
+
+<p>My position is relatively stable and the work I do genuinely matters. But stable doesn't mean comfortable, and comfortable has never been where I do my best thinking. I need to find ways to take what I'm studying and actually apply it to what I'm doing every day on the job. Stop treating the two as separate tracks and start finding where they overlap. That's the real challenge I'm bringing into this trip.</p>
+
+<p>I know comparison is the thief of joy, but honestly it's also fuel. The people around me throughout my life have been some of the most driven and hardworking I've ever met, and that has pushed me more than any course or certification ever could. If I'm going to hold myself to a high standard, I have to actually live like it. That means studying with purpose, showing up with intent, and not letting the routine become an excuse to coast.</p>
+
+<p>Four years went by fast. But I've covered a lot of ground and time moves whether you're ready or not, so I'd rather keep my head down and keep going. I used to chase short term wins but the long game is where the real payoff lives. Nothing worthwhile comes quickly, lottery tickets aside. On that note I want to give a proper shoutout to Siyu, who recently landed an internship at TikTok. I did a mock interview with them not too long ago and honestly felt more like a student than an interviewer. Proud of them. It's a good reminder that the people around you are moving too. Catch you later.</p>
+
+<img src="blog-images/belfastAgain2.jpg" alt="Belfast again" class="blog-post-hero-image">`
+    },
     // Add new blog posts above this line
 ];
 
