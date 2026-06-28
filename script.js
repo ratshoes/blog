@@ -292,7 +292,7 @@ const blogPosts = [
         date: '2026-05-23',
         category: 'Career',
         categoryClass: 'category-career',
-        featuredImage: 'blog-images/7667.jpg',
+        featuredImage: 'blog-images/f96.jpg',
         excerpt: 'The data has been mined. The compute gains are shrinking. What comes after the scaling era and who actually wins from here?',
         content: `<p>If all of the internet has been mined already and all of the good "data" has already been implemented into the most up to date frontier models then what do we have left? The real result that we want to capture is to spread as many datacenters as possible, or in other words spend more on compute for improvements that don't scale as well. In the past Open AI has been able to make massive leaps on compute alone. Take the example of the transition from Chat GPT 3 to Chat GPT 4. Open AI was able to move from 175 billion parameters to a massive 1.8 trillion and that was on the implementation of MoE (Mixture of Experts). However now the improvements we get for newer models are marginal at best; there is the largely known issue of linear results with newer models.</p>
 
