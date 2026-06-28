@@ -320,6 +320,20 @@ const blogPosts = [
 
 <img src="blog-images/belfastAgain2.jpg" alt="Belfast again" class="blog-post-hero-image">`
     },
+    {
+        id: 'initial-impressions-ai-engineering-chip-huyen',
+        title: 'Initial impressions - AI Engineering by Chip Huyen',
+        date: '2026-06-28',
+        category: 'Career',
+        categoryClass: 'category-career',
+        featuredImage: 'blog-images/ai-engineering-chip-huyen.png',
+        excerpt: '',
+        content: `<p>I first came across this book in a quest to find better self study options for becoming more informed about AI's inner workings and mechanics. My understanding is that a few years ago when the attention mechanism made its debut onto the stage, it changed and spearheaded the tools we use today. The tool that many of us have come to love and has made our lives easier is ChatGPT, along with other huge players that are competing to see who will take the center stage in this struggle and be the king of the hill. Right now I believe that Claude is the one that has built a meaningful lead against all other companies. That, however, is a story for another time and can be discussed in another blog post.</p>
+
+<p>How does attention function, you ask? Attention is the core innovation behind every modern transformer. When a model processes a sentence like "The bank by the river was steep," it has to know that "bank" means river bank and not a financial institution. To figure that out, it has to look at the surrounding words and decide which ones are most relevant to understanding "bank". This is in short what attention does. It lets every token in a sequence look at every other token and assign a relevance score. The higher the score, the more influence that token has on how the current token is interpreted.</p>
+
+<p>This book has been solid thus far and not only covers the processes of building applications, but it also gives a good segue into making these applications useful in a real world sense. It's no longer about asking how to build a model, it's about asking how to build products that use models. This entire reframing looks like it captures the book as a whole.</p>`
+    },
     // Add new blog posts above this line
 ];
 
