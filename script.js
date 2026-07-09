@@ -334,6 +334,18 @@ const blogPosts = [
 
 <p>This book has been solid thus far and not only covers the processes of building applications, but it also gives a good segue into making these applications useful in a real world sense. It's no longer about asking how to build a model, it's about asking how to build products that use models. This entire reframing looks like it captures the book as a whole.</p>`
     },
+    {
+        id: 'a-planned-vacation-and-moment-of-reflection',
+        title: 'A planned vacation and moment of reflection',
+        date: '2026-07-09',
+        category: 'Career',
+        categoryClass: 'category-career',
+        featuredImage: 'blog-images/inBristolUK.jpg',
+        excerpt: '',
+        content: `<p>By the time I publish this it will be around July and this coincides with the conclusion of my latest mission here out at sea. I can speak only for myself; I can see that the world is changing at a rapid pace. We are at an inflection point in history. When I was younger there was talk about how I should major in computer science because if I didn't I wouldn't have a wage where I can live comfortably; this was a sentiment that was peddled 10 years ago and I was around a sibling that was all about that. I saw that when he graduated and started to go off to do big things in the government sector, then later for Amazon he was doing really well for himself. Thereafter he kept moving up and now works at Capital One.</p>
+
+<p>The current landscape of what one should do these days is much different. It's no longer the set piece and beaten path to go through for many. The bar just keeps getting higher and I'm not sure if it's just me but the space in the middle looks like it's either shifting to the left or to the right. Naturally there is some confusion in these times, everything is getting more expensive and sometimes the economy doesn't even feel real. I might be late to this but I get inklings that we are just shifting money around without some "goods" even having any innate worth. With this new AI boom we really are reaching and betting everything on it. If this bubble pops it could have worse implications than the dot com boom era. This is probably going to sound like a hot take but I am of the belief that if the goal is to build wealth then now would be the best time to do it.</p>`
+    },
     // Add new blog posts above this line
 ];
 
