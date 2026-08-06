@@ -346,6 +346,18 @@ const blogPosts = [
 
 <p>The current landscape of what one should do these days is much different. It's no longer the set piece and beaten path to go through for many. The bar just keeps getting higher and I'm not sure if it's just me but the space in the middle looks like it's either shifting to the left or to the right. Naturally there is some confusion in these times, everything is getting more expensive and sometimes the economy doesn't even feel real. I might be late to this but I get inklings that we are just shifting money around without some "goods" even having any innate worth. With this new AI boom we really are reaching and betting everything on it. If this bubble pops it could have worse implications than the dot com boom era. This is probably going to sound like a hot take but I am of the belief that if the goal is to build wealth then now would be the best time to do it.</p>`
     },
+    {
+        id: 'another-trip-to-japan-3-years-revisited',
+        title: 'Another trip to Japan: 3 years revisited',
+        date: '2026-08-06',
+        category: 'Personal',
+        categoryClass: 'category-personal',
+        featuredImage: 'blog-images/newZealand.jpg',
+        excerpt: 'Yes, this is another person heading to Japan yet again, but I have an excuse. I started going before it was cheap and before it was cool. Ten days out, here is why I keep going back.',
+        content: `<p>Yes, this is another person traveling to Japan yet again, but I have an excuse! I started going there before it was as cheap as it is now and before it was (dare I say it) cool. The very first inkling that Japan's economy was going down the drain was an instance of me buying new boots. The cashier made a snarky remark about how happy I must be that the boots were cheaper than they were in the States. Not knowing any better, I just sheepishly agreed, "Yeah, I guess?" Anyway, I feel a sense of both nostalgia and eagerness to visit again. The place that launched my career was finally going to be somewhere I could see the sights and not have to worry about work.</p>
+
+<p>I am going to be doing the usual Tokyo and Kyoto trip, although I've been to other smaller parts of Japan such as Kure and got a glimpse into the World War 2 era designs that still lingered, except this time with the modern touch of gambling machines at every shop and elderly people spending their days spinning slots. I wish I still had those photos.... Wait! I actually do have them, but they are stored on my Synology server, which I really hope did not die on me because I have SOOOOO many photos on there from way back when. It kinda makes me feel old, not going to lie. I digress. Anyway, there are only 10 more days until I can spend all my money and come back with an empty wallet but memories that will last as long as the photos are still there.</p>`
+    },
     // Add new blog posts above this line
 ];
 
