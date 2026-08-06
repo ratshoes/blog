@@ -351,7 +351,7 @@ const blogPosts = [
         title: 'Another trip to Japan: 3 years revisited',
         date: '2026-08-06',
         category: 'Personal',
-        categoryClass: 'category-personal',
+        categoryClass: 'category-career',
         featuredImage: 'blog-images/newZealand.jpg',
         excerpt: 'Yes, this is another person heading to Japan yet again, but I have an excuse. I started going before it was cheap and before it was cool. Ten days out, here is why I keep going back.',
         content: `<p>Yes, this is another person traveling to Japan yet again, but I have an excuse! I started going there before it was as cheap as it is now and before it was (dare I say it) cool. The very first inkling that Japan's economy was going down the drain was an instance of me buying new boots. The cashier made a snarky remark about how happy I must be that the boots were cheaper than they were in the States. Not knowing any better, I just sheepishly agreed, "Yeah, I guess?" Anyway, I feel a sense of both nostalgia and eagerness to visit again. The place that launched my career was finally going to be somewhere I could see the sights and not have to worry about work.</p>
