@@ -370,6 +370,28 @@ function getExcerptFromContent(content, length = 180) {
     return text.length > length ? text.slice(0, length).replace(/\s+\S*$/, '') + '...' : text;
 }
 
+function getReadingTime(content) {
+    const text = content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    const words = text ? text.split(' ').length : 0;
+    return Math.max(1, Math.round(words / 200));
+}
+
+// Safe wrapper so tracking never breaks the page if gtag is blocked/absent
+function trackEvent(name, params) {
+    if (typeof gtag === 'function') {
+        gtag('event', name, params || {});
+    }
+}
+
+// Up to `count` other posts to suggest next: older posts first, wrapping to newest
+function getReadNextPosts(currentId, count = 2) {
+    const sorted = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
+    const idx = sorted.findIndex(p => p.id === currentId);
+    if (idx === -1) return sorted.slice(0, count);
+    const ordered = [...sorted.slice(idx + 1), ...sorted.slice(0, idx)];
+    return ordered.slice(0, count);
+}
+
 function generateBlogView() {
     if (blogPosts.length === 0) {
         return `
@@ -392,7 +414,10 @@ function generateBlogView() {
             <div class="blog-card-body">
                 <div class="post-header">
                     <span class="post-category ${post.categoryClass}">${post.category}</span>
-                    <span class="post-date">${post.date}</span>
+                    <span class="post-meta-group">
+                        <span class="post-date">${post.date}</span>
+                        <span class="post-date post-read-time">${getReadingTime(post.content)} min read</span>
+                    </span>
                 </div>
                 <h3 class="post-title">${post.title}</h3>
                 <p class="blog-card-excerpt">${getExcerptFromContent(post.content)}</p>
@@ -414,6 +439,22 @@ function openBlogPost(postId) {
     const post = blogPosts.find(p => p.id === postId);
     if (!post) return;
 
+    const readingTime = getReadingTime(post.content);
+    const readNext = getReadNextPosts(post.id, 2);
+    const readNextCards = readNext.map(p => `
+        <article class="read-next-card" onclick="openBlogPost('${p.id}')">
+            ${p.featuredImage
+                ? `<img src="${p.featuredImage}" alt="${p.title}" class="read-next-image" loading="lazy">`
+                : `<div class="read-next-image read-next-image-placeholder">&mdash;</div>`
+            }
+            <div class="read-next-body">
+                <span class="post-category ${p.categoryClass}">${p.category}</span>
+                <h4 class="read-next-title">${p.title}</h4>
+                <span class="read-next-meta">${p.date} &middot; ${getReadingTime(p.content)} min read</span>
+            </div>
+        </article>
+    `).join('');
+
     const mainContent = document.getElementById('main-content');
     mainContent.innerHTML = `
         <div class="blog-post-full">
@@ -425,18 +466,66 @@ function openBlogPost(postId) {
             <div class="blog-post-meta">
                 <span class="post-category ${post.categoryClass}">${post.category}</span>
                 <span class="post-date">${post.date}</span>
+                <span class="post-date post-read-time">${readingTime} min read</span>
             </div>
             <h1 class="blog-post-title">${post.title}</h1>
             <div class="blog-post-body">
                 ${post.content}
             </div>
+            ${readNextCards ? `
+            <div class="read-next">
+                <h3 class="read-next-heading">Read next</h3>
+                <div class="read-next-grid">
+                    ${readNextCards}
+                </div>
+            </div>` : ''}
         </div>
     `;
+
+    trackEvent('view_blog_post', {
+        post_id: post.id,
+        post_title: post.title,
+        post_category: post.category
+    });
+    trackReadCompletion(post);
 
     document.querySelector('.blog-post-full').scrollIntoView({ behavior: 'smooth' });
 }
 
+// Holds the active scroll handler so switching posts can detach the previous one
+let _readCompletionHandler = null;
+
+// Fire a single 'post_read_complete' event when the reader reaches the end of the body
+function trackReadCompletion(post) {
+    if (_readCompletionHandler) {
+        window.removeEventListener('scroll', _readCompletionHandler);
+        _readCompletionHandler = null;
+    }
+    const body = document.querySelector('.blog-post-body');
+    if (!body) return;
+    let fired = false;
+    function check() {
+        if (fired) return;
+        const rect = body.getBoundingClientRect();
+        // Ignore a detached node (height 0 after the post was swapped out)
+        if (rect.height === 0) return;
+        // Bottom of the article is within the viewport (reader made it to the end)
+        if (rect.bottom <= window.innerHeight + 80) {
+            fired = true;
+            trackEvent('post_read_complete', { post_id: post.id, post_title: post.title });
+            window.removeEventListener('scroll', check);
+            _readCompletionHandler = null;
+        }
+    }
+    _readCompletionHandler = check;
+    window.addEventListener('scroll', check, { passive: true });
+}
+
 function returnToBlogList() {
+    if (_readCompletionHandler) {
+        window.removeEventListener('scroll', _readCompletionHandler);
+        _readCompletionHandler = null;
+    }
     const mainContent = document.getElementById('main-content');
     mainContent.innerHTML = generateBlogView();
     currentView = 'blog';
@@ -627,6 +716,11 @@ document.querySelectorAll('.nav-button').forEach(button => {
         const view = this.dataset.view;
         currentView = view;
 
+        if (_readCompletionHandler) {
+            window.removeEventListener('scroll', _readCompletionHandler);
+            _readCompletionHandler = null;
+        }
+
         const mainContent = document.getElementById('main-content');
 
         if (view === 'blog') {
@@ -635,6 +729,8 @@ document.querySelectorAll('.nav-button').forEach(button => {
             mainContent.innerHTML = viewsContent[view];
             if (view === 'roadmap') animateProgressBars();
         }
+
+        trackEvent('select_view', { view_name: view });
 
         mainContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
