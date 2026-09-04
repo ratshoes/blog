@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#1c1917">
+    <title>Spanning Treehouse</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=13">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Q363W84BD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3Q363W84BD');
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Spanning Treehouse<img src="logo.svg" alt="Spanning Treehouse" height="32" style="vertical-align: middle; margin-left: 8px;"></div>
+            <nav class="nav">
+                <button class="nav-button active" data-view="blog">Blog</button>
+                <button class="nav-button" data-view="roadmap">Roadmap</button>
+                <button class="nav-button" data-view="certs">Certifications</button>
+                <a class="nav-icon" href="https://www.instagram.com/ratshoez/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="terminal">
+            <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-line"><span class="terminal-prompt">$</span> whoami</div>
+                <h1 class="hero-title" id="typed-title"></h1>
+                <div class="terminal-line"><span class="terminal-prompt">$</span> cat mission.txt</div>
+                <p class="hero-subtitle">Welcome to my journey. In this blog I write about life as I experience it, things I'm going through, places I've been, lessons I'm learning along the way. Career and professional growth show up here too, but this is just as much about the personal stuff.</p>
+            </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-label">Posts Published</div>
+                <div class="stat-value" id="postsPublished">—</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Days Since Last Post</div>
+                <div class="stat-value" id="daysSincePost">—</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Certs Earned</div>
+                <div class="stat-value" id="certsEarned">—</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Current Focus</div>
+                <div class="stat-value" id="currentFocus">—</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Days on Journey</div>
+                <div class="stat-value" id="timeOnJourney">—</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div id="main-content"></div>
+    </main>
+
+    <footer class="footer">2026 Steven M</footer>
+
+    <script src="script.js?v=20"></script>
+</body>
+</html>
