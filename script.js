@@ -338,6 +338,20 @@ const blogPosts = [
 
 <p>I am going to be doing the usual Tokyo and Kyoto trip, although I've been to other smaller parts of Japan such as Kure and got a glimpse into the World War 2 era designs that still lingered, except this time with the modern touch of gambling machines at every shop and elderly people spending their days spinning slots. I wish I still had those photos.... Wait! I actually do have them, but they are stored on my Synology server, which I really hope did not die on me because I have SOOOOO many photos on there from way back when. It kinda makes me feel old, not going to lie. I digress. Anyway, there are only 10 more days until I can spend all my money and come back with an empty wallet but memories that will last as long as the photos are still there.</p>`
     },
+    {
+        id: 'the-power-of-writing-and-literary-self-expression',
+        title: 'The power of writing and literary self-expression',
+        date: '2026-09-09',
+        category: 'Personal',
+        categoryClass: 'category-career',
+        featuredImage: 'blog-images/treat.png',
+        excerpt: 'So many things have changed in such little time. I come here to write in what can now be considered my personal diary at this point.',
+        content: `<p>So many things have changed in such little time. I come here to write in what can now be considered my personal diary at this point.</p>
+
+<p>There are actions in life that a person chooses to make, and eventually the unintended consequences reflect badly on others and on oneself in an immense way. Going through it all is eye-opening, and still, sometimes the lessons are not learned. Sometimes something has to happen many moments over and over again until it finally sticks. That can be applied to anything in life, whether it be in academia or in the personal connections with the people around you. Ultimately one's actions can result in a domino effect of events.</p>
+
+<p>That's all there is to it, really. I know that things have to change. I've been a bit slow to adapt these past few months, but I'm still trying, still trying to make that positive change so that things can be better. I can only wish the best for those that were affected.</p>`
+    },
     // Add new blog posts above this line
 ];
 
