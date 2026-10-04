@@ -352,6 +352,22 @@ const blogPosts = [
 
 <p>That's all there is to it, really. I know that things have to change. I've been a bit slow to adapt these past few months, but I'm still trying, still trying to make that positive change so that things can be better. I can only wish the best for those that were affected.</p>`
     },
+    {
+        id: 'brief-hiatus',
+        title: 'Brief hiatus',
+        date: '2026-10-04',
+        category: 'Personal',
+        categoryClass: 'category-career',
+        featuredImage: 'blog-images/treat.png',
+        excerpt: 'To anyone who is still reading this blog: I am taking a temporary hiatus.',
+        content: `<p>To anyone who is still reading this blog: I am taking a temporary hiatus. There's been a lot going on in life, and it's time to focus on what matters right now.</p>
+
+<p>I see that a few of you still tune in, and I'd love to thank you for all of your support. It means more than you know.</p>
+
+<p>Going back to the root of all this: everyone I've ever known has always believed in me, believed that I could accomplish whatever I set my mind to. It's been a turbulent year, and now I need to show them that their belief in me was justified.</p>
+
+<p>Until next time.</p>`
+    },
     // Add new blog posts above this line
 ];
 
